@@ -1,0 +1,25 @@
+{
+  "criterion": "Validierungs-F1 bei confidence=0.5 und IoU=0.5",
+  "selected": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego/weights/last.pt",
+  "scores": {
+    "best.pt": {
+      "true_positives": 25,
+      "false_positives": 1,
+      "missed": 7,
+      "f1": 0.8620689655172413,
+      "missed_classes": {
+        "gelb_2x2": 3,
+        "gruen_2x4": 4
+      }
+    },
+    "last.pt": {
+      "true_positives": 30,
+      "false_positives": 2,
+      "missed": 2,
+      "f1": 0.9375,
+      "missed_classes": {
+        "gelb_2x2": 2
+      }
+    }
+  }
+}

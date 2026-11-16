@@ -1,0 +1,71 @@
+{
+  "added_annotations": [
+    {
+      "image": "65af84f27add41c99c92c856ff3d089a.jpg",
+      "added": [
+        {
+          "class": "rot_2x4",
+          "box_xywh": [
+            727,
+            273,
+            226,
+            103
+          ]
+        },
+        {
+          "class": "gelb_2x2",
+          "box_xywh": [
+            1053,
+            281,
+            164,
+            98
+          ]
+        }
+      ]
+    },
+    {
+      "image": "7fb6c5e1f459430ea041c623c7c5df6e.jpg",
+      "added": [
+        {
+          "class": "rot_2x4",
+          "box_xywh": [
+            996,
+            271,
+            249,
+            122
+          ]
+        }
+      ]
+    },
+    {
+      "image": "99a3e699a4b042c6a888c4ad7e0afae7.jpg",
+      "added": [
+        {
+          "class": "blau_2x2",
+          "box_xywh": [
+            530,
+            272,
+            123,
+            103
+          ]
+        },
+        {
+          "class": "gelb_2x2",
+          "box_xywh": [
+            891,
+            276,
+            141,
+            107
+          ]
+        }
+      ]
+    }
+  ],
+  "exclude_from_training_until_reviewed": {
+    "62f87a89bdb1472cbb4504ceb186ce1e.jpg": "Hellgrüner Stein links abgeschnitten; Größe nicht sicher bestimmbar.",
+    "a78302bf4f0b40148921c5bc384a35b7.jpg": "Blaue Fragmente am linken und rechten Rand; Größen nicht sicher bestimmbar.",
+    "ac9904c543fd4f89ab7ac4c23986e448.jpg": "Gelber Stein rechts stark abgeschnitten; Größe nicht sicher bestimmbar.",
+    "99a3e699a4b042c6a888c4ad7e0afae7.jpg": "Roter Stein rechts abgeschnitten; Größe nicht sicher bestimmbar."
+  },
+  "note": "Vorhandene Markierungen beibehalten. Fünf vollständig sichtbare Steine visuell ergänzt. Originale geänderter Labeldateien in review/original_labels. Keine Größen für Randfragmente geraten."
+}

@@ -1,0 +1,5 @@
+{
+  "camera_index": 0,
+  "created_at": "2026-11-16T09:36:45.819056+01:00",
+  "annotation_format": "YOLO: class_id center_x center_y width height (normalized)"
+}
