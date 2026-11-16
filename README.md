@@ -115,7 +115,9 @@ und das Speichern gesperrt, damit keine falsche Klasse übernommen wird.
 
 Jeder Start erzeugt eine eigene Sitzung unter `dataset/raw/`, mit `images/`,
 `labels/`, `classes.json` (stabile Klassenreihenfolge) und `session.json`.
-Aufnahmen bleiben lokal und sind von Git ausgeschlossen.
+Aufnahmen werden zunächst lokal gespeichert. Dieser gesicherte Projektstand
+enthält sie im Repository; neue Aufnahmen werden erst mit einem weiteren
+Git-Commit und Push auf GitHub übertragen.
 
 Als ersten Datensatz etwa 50–100 abwechslungsreiche Beispiele je Klasse sammeln;
 der tatsächliche Bedarf hängt von den Ergebnissen ab. Position, Drehung und Licht
