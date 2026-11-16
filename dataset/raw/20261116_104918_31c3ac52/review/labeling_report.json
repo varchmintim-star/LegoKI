@@ -1,0 +1,1801 @@
+{
+  "method": "Figurenvarianten visuell identifiziert, Rahmenvorschläge aus Farbkomponenten vollständig visuell geprüft und korrigiert. Figur mit Kopf/Haaren/Hut/Händen; Sockel separat. Gehaltenes Funkgerät und kleine Rundteile sind keine eigenen Zielklassen.",
+  "originals_preserved": true,
+  "class_counts_all_photos": {
+    "maennchen": 48,
+    "gelb_2x2": 23,
+    "blau_2x2": 25
+  },
+  "validation_images": [
+    "3d8276c23fac42b1b131b64268b1c4e0.png",
+    "48694f2076bb43ffb7085eb0599655e9.png",
+    "49dfdc911a7c4ff695bc1a43580e0ebf.png",
+    "519329a5de274320a2e88cea3ee190c5.png",
+    "81b82fc9a3434d578d037dd942625eaa.png",
+    "857543d11a13425fa169234c36850073.png",
+    "c046161ffe0043bb85c2cd35f11bf7ef.png",
+    "faf9cab62a244baa8eebd6f6f77c14ab.png"
+  ],
+  "exclude_from_training_until_reviewed": {
+    "ce7e9f0f14a1443d9f83949f495b9fa2.png": "Stark unscharfe Figur; für Training/Validierung ausgeschlossen."
+  },
+  "split_policy": "Acht Aufnahmen der linken Ansichtsgruppe zurückgehalten; andere Positionen der neuen Sitzung zum Training. Kein zufälliger Bildsplit. Dieselben Figuren und dieselbe Anlage bleiben in beiden Teilen: eingeschränkte Aussagekraft.",
+  "images": [
+    {
+      "index": 0,
+      "source": "unlabeled/02f0ae3b4ea64ff78eadae2f7495a15f.jpg",
+      "image": "images/02f0ae3b4ea64ff78eadae2f7495a15f.png",
+      "label": "labels/02f0ae3b4ea64ff78eadae2f7495a15f.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            810,
+            15,
+            1116,
+            491
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            768,
+            429,
+            996,
+            596
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "source": "unlabeled/05e03bcc53974101ac7f3ebde8e3ee2d.jpg",
+      "image": "images/05e03bcc53974101ac7f3ebde8e3ee2d.png",
+      "label": "labels/05e03bcc53974101ac7f3ebde8e3ee2d.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            448,
+            119,
+            671,
+            485
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            448,
+            430,
+            671,
+            579
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "source": "unlabeled/103463ec9edb4f429cc1bec1e2c61dd1.jpg",
+      "image": "images/103463ec9edb4f429cc1bec1e2c61dd1.png",
+      "label": "labels/103463ec9edb4f429cc1bec1e2c61dd1.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            510,
+            15,
+            783,
+            498
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            564,
+            435,
+            767,
+            593
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "source": "unlabeled/107d5a158ea04de98d124046ceef82e8.jpg",
+      "image": "images/107d5a158ea04de98d124046ceef82e8.png",
+      "label": "labels/107d5a158ea04de98d124046ceef82e8.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            594,
+            120,
+            786,
+            480
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            602,
+            425,
+            778,
+            577
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "source": "unlabeled/1750784b166145fbb260edeafdbbf6f3.jpg",
+      "image": "images/1750784b166145fbb260edeafdbbf6f3.png",
+      "label": "labels/1750784b166145fbb260edeafdbbf6f3.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            767,
+            95,
+            990,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            797,
+            417,
+            973,
+            554
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "source": "unlabeled/1bf05e266b8d4aefb2a310c2c99bd603.jpg",
+      "image": "images/1bf05e266b8d4aefb2a310c2c99bd603.png",
+      "label": "labels/1bf05e266b8d4aefb2a310c2c99bd603.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            441,
+            119,
+            658,
+            480
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            441,
+            425,
+            658,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "source": "unlabeled/2a1c690614d9493d96993f2a3be6f089.jpg",
+      "image": "images/2a1c690614d9493d96993f2a3be6f089.png",
+      "label": "labels/2a1c690614d9493d96993f2a3be6f089.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            527,
+            93,
+            750,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            557,
+            417,
+            728,
+            558
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "source": "unlabeled/35703b86e3b7453fad5244573937f2d2.jpg",
+      "image": "images/35703b86e3b7453fad5244573937f2d2.png",
+      "label": "labels/35703b86e3b7453fad5244573937f2d2.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            640,
+            122,
+            851,
+            480
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            640,
+            425,
+            851,
+            582
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "source": "unlabeled/3d8276c23fac42b1b131b64268b1c4e0.jpg",
+      "image": "images/3d8276c23fac42b1b131b64268b1c4e0.png",
+      "label": "labels/3d8276c23fac42b1b131b64268b1c4e0.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "left",
+      "split": "val",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            260,
+            115,
+            525,
+            481
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            318,
+            426,
+            488,
+            567
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "source": "unlabeled/48694f2076bb43ffb7085eb0599655e9.jpg",
+      "image": "images/48694f2076bb43ffb7085eb0599655e9.png",
+      "label": "labels/48694f2076bb43ffb7085eb0599655e9.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        320,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "left",
+      "split": "val",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            5,
+            113,
+            251,
+            487
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            13,
+            432,
+            243,
+            573
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "source": "unlabeled/49dfdc911a7c4ff695bc1a43580e0ebf.jpg",
+      "image": "images/49dfdc911a7c4ff695bc1a43580e0ebf.png",
+      "label": "labels/49dfdc911a7c4ff695bc1a43580e0ebf.txt",
+      "crop_xyxy": [
+        80,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "left",
+      "split": "val",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            101,
+            115,
+            335,
+            472
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            115,
+            417,
+            335,
+            567
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "source": "unlabeled/5002c02e2231411c99bdb6eab3d8575f.jpg",
+      "image": "images/5002c02e2231411c99bdb6eab3d8575f.png",
+      "label": "labels/5002c02e2231411c99bdb6eab3d8575f.txt",
+      "crop_xyxy": [
+        80,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            982,
+            126,
+            1224,
+            498
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            1004,
+            443,
+            1188,
+            588
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "source": "unlabeled/519329a5de274320a2e88cea3ee190c5.jpg",
+      "image": "images/519329a5de274320a2e88cea3ee190c5.png",
+      "label": "labels/519329a5de274320a2e88cea3ee190c5.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "left",
+      "split": "val",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            360,
+            92,
+            583,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            390,
+            417,
+            557,
+            556
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "source": "unlabeled/52e62d8b1dfc4540b86feeff5455433a.jpg",
+      "image": "images/52e62d8b1dfc4540b86feeff5455433a.png",
+      "label": "labels/52e62d8b1dfc4540b86feeff5455433a.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            643,
+            122,
+            855,
+            485
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            643,
+            430,
+            851,
+            583
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "source": "unlabeled/542f7590cb7b44459a96830103f06ff8.jpg",
+      "image": "images/542f7590cb7b44459a96830103f06ff8.png",
+      "label": "labels/542f7590cb7b44459a96830103f06ff8.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            810,
+            97,
+            1077,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            840,
+            417,
+            1059,
+            559
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "source": "unlabeled/57adb483d1524b0d80d83ab6f6467a43.jpg",
+      "image": "images/57adb483d1524b0d80d83ab6f6467a43.png",
+      "label": "labels/57adb483d1524b0d80d83ab6f6467a43.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            750,
+            15,
+            1045,
+            491
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            711,
+            429,
+            934,
+            596
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "source": "unlabeled/6d80fd7d8c584209b003c2078d499dad.jpg",
+      "image": "images/6d80fd7d8c584209b003c2078d499dad.png",
+      "label": "labels/6d80fd7d8c584209b003c2078d499dad.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            569,
+            93,
+            799,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            599,
+            417,
+            764,
+            554
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "source": "unlabeled/6fd65c83ada14167ac7d9ef2c5ecf9d5.jpg",
+      "image": "images/6fd65c83ada14167ac7d9ef2c5ecf9d5.png",
+      "label": "labels/6fd65c83ada14167ac7d9ef2c5ecf9d5.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            895,
+            123,
+            1105,
+            493
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            895,
+            438,
+            1098,
+            576
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "source": "unlabeled/73969ea7746f45dba23e7f3b61c633cd.jpg",
+      "image": "images/73969ea7746f45dba23e7f3b61c633cd.png",
+      "label": "labels/73969ea7746f45dba23e7f3b61c633cd.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            648,
+            15,
+            935,
+            488
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            614,
+            429,
+            832,
+            594
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "source": "unlabeled/7b685cdda26946e98f115e7f0dac5cc7.jpg",
+      "image": "images/7b685cdda26946e98f115e7f0dac5cc7.png",
+      "label": "labels/7b685cdda26946e98f115e7f0dac5cc7.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            894,
+            124,
+            1096,
+            505
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            894,
+            450,
+            1073,
+            581
+          ]
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "source": "unlabeled/80cd06d89e174befa1382099216f12ba.jpg",
+      "image": "images/80cd06d89e174befa1382099216f12ba.png",
+      "label": "labels/80cd06d89e174befa1382099216f12ba.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            731,
+            95,
+            964,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            761,
+            417,
+            928,
+            556
+          ]
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "source": "unlabeled/8123d236e4b54fa5a9abd3f9d8deb643.jpg",
+      "image": "images/8123d236e4b54fa5a9abd3f9d8deb643.png",
+      "label": "labels/8123d236e4b54fa5a9abd3f9d8deb643.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            704,
+            122,
+            915,
+            490
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            704,
+            435,
+            892,
+            580
+          ]
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "source": "unlabeled/81b82fc9a3434d578d037dd942625eaa.jpg",
+      "image": "images/81b82fc9a3434d578d037dd942625eaa.png",
+      "label": "labels/81b82fc9a3434d578d037dd942625eaa.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "left",
+      "split": "val",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            102,
+            5,
+            391,
+            480
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            161,
+            470,
+            346,
+            584
+          ]
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "source": "unlabeled/857543d11a13425fa169234c36850073.jpg",
+      "image": "images/857543d11a13425fa169234c36850073.png",
+      "label": "labels/857543d11a13425fa169234c36850073.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "left",
+      "split": "val",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            382,
+            5,
+            665,
+            484
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            395,
+            433,
+            589,
+            588
+          ]
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "source": "unlabeled/8ecfec94106c4986a6a4beb87bf8aa92.jpg",
+      "image": "images/8ecfec94106c4986a6a4beb87bf8aa92.png",
+      "label": "labels/8ecfec94106c4986a6a4beb87bf8aa92.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            703,
+            96,
+            955,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            733,
+            417,
+            939,
+            558
+          ]
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "source": "unlabeled/92983404a2714ce4a3efbfc81ca52f90.jpg",
+      "image": "images/92983404a2714ce4a3efbfc81ca52f90.png",
+      "label": "labels/92983404a2714ce4a3efbfc81ca52f90.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            733,
+            123,
+            960,
+            489
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            733,
+            434,
+            955,
+            584
+          ]
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "source": "unlabeled/966c3fef803b4b13b3c606791ece6ef5.jpg",
+      "image": "images/966c3fef803b4b13b3c606791ece6ef5.png",
+      "label": "labels/966c3fef803b4b13b3c606791ece6ef5.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            705,
+            5,
+            990,
+            501
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            738,
+            475,
+            922,
+            596
+          ]
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "source": "unlabeled/9c8a3185e71144039c866cfc8e232710.jpg",
+      "image": "images/9c8a3185e71144039c866cfc8e232710.png",
+      "label": "labels/9c8a3185e71144039c866cfc8e232710.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            586,
+            5,
+            865,
+            487
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            561,
+            434,
+            771,
+            592
+          ]
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "source": "unlabeled/a0806b089b63438bb39c5844952eaa5f.jpg",
+      "image": "images/a0806b089b63438bb39c5844952eaa5f.png",
+      "label": "labels/a0806b089b63438bb39c5844952eaa5f.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            605,
+            5,
+            883,
+            487
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            575,
+            433,
+            788,
+            593
+          ]
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "source": "unlabeled/a0d443a8d55f42b6b37623ccf5f17e2e.jpg",
+      "image": "images/a0d443a8d55f42b6b37623ccf5f17e2e.png",
+      "label": "labels/a0d443a8d55f42b6b37623ccf5f17e2e.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            445,
+            118,
+            636,
+            489
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            453,
+            434,
+            628,
+            573
+          ]
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "source": "unlabeled/a44ffea8095f4b559abfb2434abb39e1.jpg",
+      "image": "images/a44ffea8095f4b559abfb2434abb39e1.png",
+      "label": "labels/a44ffea8095f4b559abfb2434abb39e1.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            550,
+            119,
+            797,
+            486
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            588,
+            431,
+            782,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "source": "unlabeled/aa1d2b978a3644649abc6e6e708232ab.jpg",
+      "image": "images/aa1d2b978a3644649abc6e6e708232ab.png",
+      "label": "labels/aa1d2b978a3644649abc6e6e708232ab.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            723,
+            94,
+            945,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            753,
+            417,
+            924,
+            553
+          ]
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "source": "unlabeled/b031096d621f45d4ab0b0394fc8cfc45.jpg",
+      "image": "images/b031096d621f45d4ab0b0394fc8cfc45.png",
+      "label": "labels/b031096d621f45d4ab0b0394fc8cfc45.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            579,
+            120,
+            812,
+            493
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            587,
+            438,
+            804,
+            579
+          ]
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "source": "unlabeled/c046161ffe0043bb85c2cd35f11bf7ef.jpg",
+      "image": "images/c046161ffe0043bb85c2cd35f11bf7ef.png",
+      "label": "labels/c046161ffe0043bb85c2cd35f11bf7ef.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "left",
+      "split": "val",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            413,
+            5,
+            695,
+            484
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            419,
+            433,
+            616,
+            589
+          ]
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "source": "unlabeled/ca1fdf0a91f64e87aa1fe981cd9d4f8c.jpg",
+      "image": "images/ca1fdf0a91f64e87aa1fe981cd9d4f8c.png",
+      "label": "labels/ca1fdf0a91f64e87aa1fe981cd9d4f8c.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            730,
+            122,
+            972,
+            490
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            769,
+            435,
+            952,
+            581
+          ]
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "source": "unlabeled/ce7e9f0f14a1443d9f83949f495b9fa2.jpg",
+      "image": "images/ce7e9f0f14a1443d9f83949f495b9fa2.png",
+      "label": "labels/ce7e9f0f14a1443d9f83949f495b9fa2.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "exclude",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            988,
+            109,
+            1262,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            1018,
+            417,
+            1239,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "source": "unlabeled/cf6823ab38724b939f0c9e286f21c86a.jpg",
+      "image": "images/cf6823ab38724b939f0c9e286f21c86a.png",
+      "label": "labels/cf6823ab38724b939f0c9e286f21c86a.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            942,
+            15,
+            1240,
+            504
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            949,
+            476,
+            1142,
+            600
+          ]
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "source": "unlabeled/d257c335ac8c4925b80e46659c17d5dc.jpg",
+      "image": "images/d257c335ac8c4925b80e46659c17d5dc.png",
+      "label": "labels/d257c335ac8c4925b80e46659c17d5dc.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            741,
+            124,
+            951,
+            481
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            749,
+            426,
+            943,
+            578
+          ]
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "source": "unlabeled/d3878703f52a41e2a3c382cadccfa636.jpg",
+      "image": "images/d3878703f52a41e2a3c382cadccfa636.png",
+      "label": "labels/d3878703f52a41e2a3c382cadccfa636.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            976,
+            126,
+            1237,
+            483
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            984,
+            428,
+            1229,
+            585
+          ]
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "source": "unlabeled/db46a334d8db4597821c01171a7ca089.jpg",
+      "image": "images/db46a334d8db4597821c01171a7ca089.png",
+      "label": "labels/db46a334d8db4597821c01171a7ca089.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            476,
+            5,
+            759,
+            486
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            468,
+            434,
+            673,
+            591
+          ]
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "source": "unlabeled/df67608b70ed4c5db80f8bda729db712.jpg",
+      "image": "images/df67608b70ed4c5db80f8bda729db712.png",
+      "label": "labels/df67608b70ed4c5db80f8bda729db712.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blackhair",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            803,
+            15,
+            1106,
+            491
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            760,
+            428,
+            989,
+            597
+          ]
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "source": "unlabeled/e6988f5c0d434c79b7ace2a0883583c8.jpg",
+      "image": "images/e6988f5c0d434c79b7ace2a0883583c8.png",
+      "label": "labels/e6988f5c0d434c79b7ace2a0883583c8.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            780,
+            97,
+            1036,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            810,
+            417,
+            1017,
+            563
+          ]
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "source": "unlabeled/f32a24004b194e11adb71da2d1a577c0.jpg",
+      "image": "images/f32a24004b194e11adb71da2d1a577c0.png",
+      "label": "labels/f32a24004b194e11adb71da2d1a577c0.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            738,
+            122,
+            934,
+            507
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            750,
+            452,
+            922,
+            573
+          ]
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "source": "unlabeled/f82ca761db0c4e64bb41f3bfa32f2898.jpg",
+      "image": "images/f82ca761db0c4e64bb41f3bfa32f2898.png",
+      "label": "labels/f82ca761db0c4e64bb41f3bfa32f2898.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            612,
+            93,
+            833,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            642,
+            417,
+            810,
+            552
+          ]
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "source": "unlabeled/f91d8cd5e66048f9b4d05551f166468a.jpg",
+      "image": "images/f91d8cd5e66048f9b4d05551f166468a.png",
+      "label": "labels/f91d8cd5e66048f9b4d05551f166468a.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "red_cap",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            483,
+            91,
+            706,
+            462
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            513,
+            417,
+            679,
+            550
+          ]
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "source": "unlabeled/fa3f50ee4e104ea1a3ce35f3b6351216.jpg",
+      "image": "images/fa3f50ee4e104ea1a3ce35f3b6351216.png",
+      "label": "labels/fa3f50ee4e104ea1a3ce35f3b6351216.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "blue_seated",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            858,
+            125,
+            1076,
+            491
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            858,
+            436,
+            1061,
+            587
+          ]
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "source": "unlabeled/faf9cab62a244baa8eebd6f6f77c14ab.jpg",
+      "image": "images/faf9cab62a244baa8eebd6f6f77c14ab.png",
+      "label": "labels/faf9cab62a244baa8eebd6f6f77c14ab.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "left",
+      "split": "val",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            273,
+            118,
+            512,
+            474
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            281,
+            419,
+            504,
+            577
+          ]
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "source": "unlabeled/fc1bf0c715d9427d88b187291ccd1461.jpg",
+      "image": "images/fc1bf0c715d9427d88b187291ccd1461.png",
+      "label": "labels/fc1bf0c715d9427d88b187291ccd1461.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "variant": "yellow_vest",
+      "view_group": "center_right",
+      "split": "train",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            732,
+            122,
+            950,
+            478
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "gelb_2x2",
+          "box_xyxy_in_original": [
+            740,
+            423,
+            942,
+            577
+          ]
+        }
+      ]
+    }
+  ]
+}

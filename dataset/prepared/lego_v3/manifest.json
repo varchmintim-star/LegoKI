@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-11-16T10:59:59.792998+01:00",
+  "sessions": {
+    "train": [
+      "20261116_095613_905fb56a",
+      "20261116_102854_5abbfb74",
+      "20261116_104918_31c3ac52"
+    ],
+    "val": [
+      "20261116_094633_4a11d604",
+      "20261116_104918_31c3ac52"
+    ]
+  },
+  "image_counts": {
+    "train": 115,
+    "val": 16
+  },
+  "class_counts": {
+    "train": {
+      "gruen_2x4": 23,
+      "blau_2x2": 68,
+      "gelb_2x2": 42,
+      "rot_2x4": 43,
+      "hellgruen_2x2": 48,
+      "weiss_2x4": 23,
+      "rot_2x2": 11,
+      "maennchen": 50,
+      "hellgruen_2x4": 11
+    },
+    "val": {
+      "weiss_2x4": 2,
+      "gelb_2x2": 18,
+      "blau_2x2": 7,
+      "rot_2x4": 7,
+      "gruen_2x4": 4,
+      "hellgruen_2x2": 2,
+      "maennchen": 8
+    }
+  },
+  "unlearned_classes": [
+    "blau_2x4",
+    "gelb_2x4",
+    "gruen_2x2",
+    "weiss_2x2"
+  ],
+  "unvalidated_classes": [
+    "hellgruen_2x4",
+    "rot_2x2"
+  ],
+  "heldout_groups": {
+    "20261116_104918_31c3ac52": "Acht Aufnahmen der linken Ansichtsgruppe zurückgehalten; andere Positionen der neuen Sitzung zum Training. Kein zufälliger Bildsplit. Dieselben Figuren und dieselbe Anlage bleiben in beiden Teilen: eingeschränkte Aussagekraft."
+  },
+  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden. Ein Teil der Validierung ist eine zurückgehaltene Ansichtsgruppe innerhalb einer Trainingssitzung."
+}

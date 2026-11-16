@@ -1,0 +1,23 @@
+{
+  "criterion": "Validierungs-F1 bei confidence=0.5 und IoU=0.5; Weitertraining eines Modells mit denselben neun bereits gelernten Klassen. Keine neuen unvalidierten Klassen.",
+  "selected": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-3/weights/best.pt",
+  "scores": {
+    "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-3/weights/best.pt": {
+      "tp": 46,
+      "fp": 1,
+      "fn": 2,
+      "f1": 0.968421052631579
+    },
+    "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-3/weights/last.pt": {
+      "tp": 45,
+      "fp": 2,
+      "fn": 3,
+      "f1": 0.9473684210526315
+    }
+  },
+  "source_model": "/Users/Tim/Documents/DHBW/DataScienceKILego/models/archive/lego_v2/lego_best.pt",
+  "unvalidated_classes": [
+    "hellgruen_2x4",
+    "rot_2x2"
+  ]
+}

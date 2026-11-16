@@ -1,6 +1,7 @@
 """Aufnahmesitzungen getrennt für Training und Validierung vorbereiten."""
 
 from collections import Counter
+import argparse
 from datetime import datetime
 import hashlib
 import json
@@ -38,7 +39,21 @@ def prepare(raw=Path("dataset/raw"), output=Path("dataset/prepared/lego_v1")):
 
     # Die älteste Sitzung bleibt zur Validierung reserviert. Neuere Aufnahmen
     # ergänzen das Training, damit ältere gelernte Klassen nicht verloren gehen.
-    splits = {"train": sessions[1:], "val": sessions[:1]}
+    splits = {"train": [], "val": sessions[:1]}
+    heldout_groups = {}
+    for session, images in sessions[1:]:
+        report_path = session / "review/labeling_report.json"
+        report = json.loads(report_path.read_text()) if report_path.exists() else {}
+        heldout = set(report.get("validation_images", []))
+        if not heldout.issubset({p.name for p in images}):
+            raise ValueError(f"Unbekannte oder ausgeschlossene Kontrollbilder: {session}")
+        train_images = [p for p in images if p.name not in heldout]
+        val_images = [p for p in images if p.name in heldout]
+        if train_images:
+            splits["train"].append((session, train_images))
+        if val_images:
+            splits["val"].append((session, val_images))
+            heldout_groups[session.name] = report.get("split_policy", "Explizite Kontrollgruppe")
     prepared = []
     counts = {split: Counter() for split in splits}
     hashes = {split: set() for split in splits}
@@ -83,14 +98,20 @@ def prepare(raw=Path("dataset/raw"), output=Path("dataset/prepared/lego_v1")):
         "class_counts": {split: dict(counter) for split, counter in counts.items()},
         "unlearned_classes": sorted(set(CLASSES) - counts["train"].keys()),
         "unvalidated_classes": sorted(counts["train"].keys() - counts["val"].keys()),
+        "heldout_groups": heldout_groups,
         "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. "
-                        "Sitzungstrennung ist kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden.",
+                        "Kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden." +
+                        (" Ein Teil der Validierung ist eine zurückgehaltene Ansichtsgruppe "
+                         "innerhalb einer Trainingssitzung." if heldout_groups else ""),
     }
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
     return output / "data.yaml", manifest
 
 
 if __name__ == "__main__":
-    config, manifest = prepare()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=Path("dataset/prepared/lego_v3"))
+    args = parser.parse_args()
+    config, manifest = prepare(output=args.output)
     print(config)
     print(json.dumps(manifest, ensure_ascii=False, indent=2))

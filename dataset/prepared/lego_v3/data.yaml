@@ -1,0 +1,19 @@
+{
+  "train": "images/train",
+  "val": "images/val",
+  "names": {
+    "0": "gelb_2x2",
+    "1": "gelb_2x4",
+    "2": "gruen_2x2",
+    "3": "gruen_2x4",
+    "4": "hellgruen_2x2",
+    "5": "hellgruen_2x4",
+    "6": "weiss_2x2",
+    "7": "weiss_2x4",
+    "8": "blau_2x2",
+    "9": "blau_2x4",
+    "10": "rot_2x2",
+    "11": "rot_2x4",
+    "12": "maennchen"
+  }
+}

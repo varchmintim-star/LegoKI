@@ -31,16 +31,22 @@ Training-Abhängigkeiten installieren:
 .venv/bin/python -m pip install -r requirements-training.txt
 ```
 
-Der aktuelle vorbereitete Datensatz unter `dataset/prepared/lego_v2/` enthält
-76 Trainingsbilder mit 241 Objekten aus zwei Sitzungen sowie acht
-Validierungsbilder der ältesten Sitzung. Vier ältere Bilder mit unklaren
-Randfragmenten sind ausgeschlossen. Der erste Datensatz bleibt unter `lego_v1/` erhalten.
-Der Aufbau erfolgt mit `prepare_dataset.py`; vorhandene vorbereitete Daten
-werden dabei nicht überschrieben. Klassenverteilung und Einschränkungen stehen
-in `dataset/prepared/lego_v2/manifest.json`.
+Der aktuelle vorbereitete Datensatz unter `dataset/prepared/lego_v3/` enthält
+115 Trainingsbilder mit 319 Objekten und 16 Validierungsbilder mit 48 Objekten.
+Die neue Figuren-Sitzung wurde in Ansichtsgruppen geteilt: acht linke Ansichten
+bleiben zur Kontrolle reserviert, 39 Fotos ergänzen das Training. Ein stark
+unscharfes Foto ist ausgeschlossen. Dazu kommen die bisherigen 76 Trainings-
+und acht Kontrollbilder. Die älteren Datensätze bleiben erhalten.
+
+`prepare_dataset.py` berücksichtigt die Kontrollgruppen und Ausschlüsse aus den
+Beschriftungsberichten. Vorhandene vorbereitete Daten werden nicht überschrieben.
+Für einen weiteren Datensatz z. B. `--output dataset/prepared/lego_v4` verwenden.
+Klassenverteilung und Einschränkungen stehen in `dataset/prepared/lego_v3/manifest.json`.
+
+Der dritte Lauf setzt beim gesicherten v2-Modell an:
 
 ```sh
-.venv/bin/python train_model.py --epochs 60 --patience 0
+.venv/bin/python train_model.py --model models/archive/lego_v2/lego_best.pt --epochs 60 --patience 0
 ```
 
 Das Training passt vortrainierte YOLO11-Nano-Gewichte lokal an die LEGO-Daten an.
@@ -49,9 +55,10 @@ Batchgröße 4, Bildgröße 640. Farbtonänderungen als Datenaugmentation sind
 deaktiviert, damit die Farblabels gültig bleiben. Ergebnisse und Gewichte landen
 in einem neuen Ordner unter `runs/lego*`. Ohne neue unvalidierte Klassen wird
 aus dem besten und letzten Checkpoint nach Validierungs-F1 bei confidence 0.5
-und IoU 0.5 ausgewählt. Fehlen neue Klassen im Kontrollsatz, wird der letzte
-vollständig trainierte Stand übernommen; der alte Kontrollsatz kann deren
-Lernfortschritt nicht bewerten. `--patience 0` deaktiviert Early Stopping.
+und IoU 0.5 ausgewählt. Werden wirklich neue Klassen gelernt, die weder
+im Ausgangsmodell noch im Kontrollsatz vertreten sind, wird der letzte
+vollständig trainierte Stand übernommen. Bei Fortsetzung bereits gelernter
+Klassen kann der bessere Kontrollwert zur Auswahl verwendet werden. `--patience 0` deaktiviert Early Stopping.
 Das Live-Modell liegt unter `models/lego_best.pt`. Auswahl und Einschränkungen
 stehen in `runs/lego*/live_selection.json`.
 
@@ -63,9 +70,10 @@ stehen in `runs/lego*/live_selection.json`.
 die Anzeigeschwelle. `lego_detector.py` ist weiterhin nur der frühere
 heuristische Prototyp; für das trainierte Modell `lego_camera.py` verwenden.
 
-Der zweite Trainingslauf liegt unter `runs/lego-2/`: 60 Epochen auf Apple M3,
-76 Trainingsbilder, acht Validierungsbilder. Das vorherige Live-Modell ist
-unter `models/archive/lego_v1/` gesichert.
+Der dritte Trainingslauf liegt unter `runs/lego-3/`: 60 zusätzliche Epochen
+auf Apple M3, ausgehend vom v2-Modell. Der ausgewählte Checkpoint liegt aktiv
+unter `models/lego_best.pt`. Vorherige Live-Modelle sind unter
+`models/archive/lego_v1/` und `models/archive/lego_v2/` gesichert.
 
 Aktuell gelernt:
 
@@ -78,12 +86,16 @@ filtert untrainierte Klassen über `models/lego_best.json` aus. Für Rot und
 Hellgrün kommen nun beide Größen im Training vor. Bei den anderen Farben
 sind Farbe und Größe weiterhin gekoppelt.
 
-Die Funktionsprüfung auf den Trainingsbildern erkennt 241 von 241 markierten
-Objekten. Dies belegt keine Generalisierung. Auf den acht alten Kontrollbildern
-werden 31 von 32 Steinen korrekt erkannt, bei einem Fehlalarm (confidence 0.5,
-IoU 0.5). Für Männchen, Rot 2×2 und Hellgrün 2×4 fehlen unabhängige Kontrollbilder.
-Die Zahlen sind deshalb keine allgemeine Trefferquote. Details stehen unter
-`runs/lego-2/review/verification.json` und `runs/lego-2/MODEL_CARD.md`.
+Auf den 16 Kontrollbildern erkennt das ausgewählte Modell 46 von 48 Objekten,
+bei einem Fehlalarm (confidence 0.5, IoU 0.5). Darunter werden alle acht
+zurückgehaltenen Männchen erkannt; das vorherige v2-Modell erkannte hier drei.
+Auf den Trainingsbildern werden 319 von 319 markierten Objekten erkannt.
+
+Der Kontrollsatz ist klein, zeigt dieselben Figuren und dieselbe Anlage und
+enthält teilweise Aufnahmen aus derselben Sitzung wie das Training, getrennt
+nach Position. Er ist kein unabhängiger Praxistest. Für Rot 2×2 und Hellgrün 2×4
+fehlen weiterhin Kontrollbilder. Details stehen in
+`runs/lego-3/review/verification.json` und `runs/lego-3/MODEL_CARD.md`.
 
 Grundlage: [Ultralytics-Training](https://docs.ultralytics.com/modes/train/).
 
@@ -104,6 +116,12 @@ mit 121 Objekten, darunter elf Männchen sowie erstmals rote 2×2- und hellgrün
 Diese Daten wurden zusammen mit der vorherigen Sitzung im zweiten
 Trainingslauf verwendet. Für die neuen Klassen fehlen weiterhin unabhängige
 Validierungsaufnahmen.
+
+Die Figuren-Sitzung `20261116_104918_31c3ac52` enthält 48 beschriftete Fotos
+mit 96 Rahmen: jeweils Männchen und separater gelber oder blauer 2×2-Sockel.
+Acht Fotos dienen als Kontrollgruppe, 39 als Training; eines ist wegen
+Unschärfe ausgeschlossen. Kleine Rundteile und gehaltene Funkgeräte sind
+keine eigenen Zielklassen. Die Originalfotos bleiben unverändert erhalten.
 
 ### Beschriftung durch Codex
 

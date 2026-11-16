@@ -1,0 +1,375 @@
+{
+  "best_candidate": {
+    "images": 16,
+    "counts": {
+      "tp": 46,
+      "targets": 48,
+      "fp": 1,
+      "fn": 2
+    },
+    "by_class": {
+      "blau_2x2": {
+        "tp": 7,
+        "targets": 7
+      },
+      "gelb_2x2": {
+        "tp": 16,
+        "targets": 18,
+        "fp": 1,
+        "fn": 2
+      },
+      "gruen_2x4": {
+        "tp": 4,
+        "targets": 4
+      },
+      "hellgruen_2x2": {
+        "tp": 2,
+        "targets": 2
+      },
+      "maennchen": {
+        "tp": 8,
+        "targets": 8
+      },
+      "rot_2x4": {
+        "tp": 7,
+        "targets": 7
+      },
+      "weiss_2x4": {
+        "tp": 2,
+        "targets": 2
+      }
+    },
+    "per_image": [
+      {
+        "image": "20261116_094633_4a11d604_08ecbe37f87b4f0fbaa3d571d097dbf6.jpg",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9845,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.981,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9725,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9464,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_094633_4a11d604_5ac57de3f8da458d802e67ef9f8a3dac.jpg",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9894,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9829,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8779,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8538,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_094633_4a11d604_65af84f27add41c99c92c856ff3d089a.jpg",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9897,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.984,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9803,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8524,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_094633_4a11d604_7219b2a346ab497d91c1f9c52ab8c6dc.jpg",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9899,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9799,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8767,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8759,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_094633_4a11d604_7fb6c5e1f459430ea041c623c7c5df6e.jpg",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9839,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8984,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8929,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.864,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_094633_4a11d604_d0f2bb839d214e93b073f8d4e9364672.jpg",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9718,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9678,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9025,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9017,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_094633_4a11d604_e5be24bcebca4423a2f0c4c05eb8fcbe.jpg",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9865,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9812,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9703,
+            "matched": false
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8994,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_094633_4a11d604_fec43a2f7c504c00a53a560081b88701.jpg",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9908,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9858,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9059,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8919,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_3d8276c23fac42b1b131b64268b1c4e0.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9796,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.8295,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_48694f2076bb43ffb7085eb0599655e9.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.6031,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_49dfdc911a7c4ff695bc1a43580e0ebf.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9528,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9472,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_519329a5de274320a2e88cea3ee190c5.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9818,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.8681,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_81b82fc9a3434d578d037dd942625eaa.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9747,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.5695,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_857543d11a13425fa169234c36850073.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9872,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.664,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_c046161ffe0043bb85c2cd35f11bf7ef.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.992,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.7436,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_faf9cab62a244baa8eebd6f6f77c14ab.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9772,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9599,
+            "matched": true
+          }
+        ]
+      }
+    ]
+  },
+  "thresholds": {
+    "confidence": 0.5,
+    "IoU_for_matching": 0.5
+  },
+  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden. Ein Teil der Validierung ist eine zurückgehaltene Ansichtsgruppe innerhalb einer Trainingssitzung.",
+  "unvalidated_classes": [
+    "hellgruen_2x4",
+    "rot_2x2"
+  ],
+  "unlearned_classes": [
+    "blau_2x4",
+    "gelb_2x4",
+    "gruen_2x2",
+    "weiss_2x2"
+  ]
+}

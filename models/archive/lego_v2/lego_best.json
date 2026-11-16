@@ -1,0 +1,28 @@
+{
+  "trained_classes": [
+    "blau_2x2",
+    "gelb_2x2",
+    "gruen_2x4",
+    "hellgruen_2x2",
+    "hellgruen_2x4",
+    "maennchen",
+    "rot_2x2",
+    "rot_2x4",
+    "weiss_2x4"
+  ],
+  "unlearned_classes": [
+    "blau_2x4",
+    "gelb_2x4",
+    "gruen_2x2",
+    "weiss_2x2"
+  ],
+  "unvalidated_classes": [
+    "hellgruen_2x4",
+    "maennchen",
+    "rot_2x2"
+  ],
+  "source_checkpoint": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2/weights/last.pt",
+  "source_run": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2",
+  "data": "dataset/prepared/lego_v2/data.yaml",
+  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Sitzungstrennung ist kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden."
+}

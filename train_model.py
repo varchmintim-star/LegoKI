@@ -73,7 +73,9 @@ def select_live_checkpoint(checkpoints, dataset):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--data", type=Path, default=ROOT / "dataset/prepared/lego_v2/data.yaml")
+    parser.add_argument("--data", type=Path, default=ROOT / "dataset/prepared/lego_v3/data.yaml")
+    parser.add_argument("--model", type=Path, default=ROOT / "models/yolo11n.pt",
+                        help="Vortrainierte Gewichte oder vorhandenes LEGO-Modell")
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--device", default="auto", choices=("auto", "mps", "cpu"))
     parser.add_argument("--batch", type=int, default=4)
@@ -89,7 +91,7 @@ def main():
 
     device = ("mps" if torch.backends.mps.is_available() else "cpu") if args.device == "auto" else args.device
     (ROOT / "models").mkdir(exist_ok=True)
-    model = YOLO(str(ROOT / "models/yolo11n.pt"))
+    model = YOLO(str(args.model))
     model.train(data=str(args.data), epochs=args.epochs, imgsz=640, batch=args.batch,
                 device=device, workers=0, project=str(ROOT / "runs"), name="lego",
                 seed=42, patience=args.patience, amp=False, plots=True, cache=False,
@@ -102,9 +104,14 @@ def main():
     manifest_path = args.data.parent / "manifest.json"
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text())
-        if manifest.get("unvalidated_classes"):
-            # Ein alter Kontrollsatz ohne neue Klassen kann deren Lernfortschritt
-            # nicht bewerten. Den vollständig trainierten letzten Stand behalten.
+        source_metadata = args.model.with_suffix(".json")
+        known_classes = set()
+        if source_metadata.exists():
+            known_classes = set(json.loads(source_metadata.read_text()).get("trained_classes", []))
+        new_classes = set(manifest["class_counts"]["train"]) - known_classes
+        if new_classes.intersection(manifest.get("unvalidated_classes", [])):
+            # Wirklich neue Klassen ohne Kontrollbilder sind im Auswahlwert
+            # unsichtbar. Bei Fortsetzung bereits gelernter Klassen greift dies nicht.
             selected = model.trainer.last
             criterion = "Letzter Trainingsstand: Für neue Klassen fehlen Validierungsbilder; " \
                         "die Kontrollwerte bewerten nur die bisherigen Klassen."

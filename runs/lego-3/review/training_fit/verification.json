@@ -1,0 +1,2234 @@
+{
+  "best_candidate": {
+    "images": 115,
+    "counts": {
+      "tp": 319,
+      "targets": 319
+    },
+    "by_class": {
+      "blau_2x2": {
+        "tp": 68,
+        "targets": 68
+      },
+      "gelb_2x2": {
+        "tp": 42,
+        "targets": 42
+      },
+      "gruen_2x4": {
+        "tp": 23,
+        "targets": 23
+      },
+      "hellgruen_2x2": {
+        "tp": 48,
+        "targets": 48
+      },
+      "hellgruen_2x4": {
+        "tp": 11,
+        "targets": 11
+      },
+      "maennchen": {
+        "tp": 50,
+        "targets": 50
+      },
+      "rot_2x2": {
+        "tp": 11,
+        "targets": 11
+      },
+      "rot_2x4": {
+        "tp": 43,
+        "targets": 43
+      },
+      "weiss_2x4": {
+        "tp": 23,
+        "targets": 23
+      }
+    },
+    "per_image": [
+      {
+        "image": "20261116_095613_905fb56a_033e414b842243a8b8476f2be8c961a2.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9883,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9821,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8914,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_095eb15fbe974b7dbfc39ddbbfa48a2f.png",
+        "detections": [
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9203,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9133,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9088,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_0b4d9d89e3864574b8cdaa079d6e365a.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9512,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9409,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9275,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_1c0fef3b8cf14c56901b098d33c27205.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9908,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9323,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.8966,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8746,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_24d7f40367034b59a4f06e6192f42456.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9854,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9288,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8433,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_2fb9a0aee12f4dcc97694f6bfa7632fc.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9876,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9748,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8579,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_33e082617bc441a398c101052331fcee.png",
+        "detections": [
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9609,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9593,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9235,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_44e9742ab1474051a18de2dc3e3f4fa6.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.95,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9252,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8888,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_48a0c52491174d47812dbca87ccd5b5a.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9848,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9004,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.7873,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_5c91ca67c91447a5a191299a1046b0f2.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9886,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9733,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9326,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_5d86f1e4f1074651bb03343e0b528bf1.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9845,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9511,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9481,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_5dabb6ef00b5497b9caf6bb51a1a573a.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9893,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9809,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8891,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_658112f984484af5aceb2ebbffefb381.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9861,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9123,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.8805,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_6a30bb68520d4e3b8c9ae57774459cfc.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9758,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9093,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.6744,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_6e1841297a574c228762d6e98dda01b8.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9796,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9728,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9089,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_6e5664080f14408b82d0efb8c53f76d6.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9768,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8938,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8151,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_751db751d32b44edbae3c6c9f40d17e6.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9833,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9222,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9211,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8508,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_7536c6350de543bcb1acb1ed92f60f0c.png",
+        "detections": [
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9183,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9097,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8346,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_7671f2597ae342c4a3a0d293ae30edbe.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9905,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9608,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9122,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9112,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_7c3d585dc2eb44fba1efca7f356c951c.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9851,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9051,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.8939,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_8284c5b655aa45a981b74bd79cceb4a7.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9809,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9803,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9453,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_87c5abfa51cc4f539d2245be070a52eb.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9786,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8965,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8461,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_8ad3b49d8715474398574312d3b02a94.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9776,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8198,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.7467,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_8eb73e2cb0b34d328fa064a06eea3e51.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9911,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9843,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9185,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_92d64d61bdc24bd2961f9e7b7bffa5d8.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9863,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9813,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8527,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_b74ae5296f484c6d9e4c5d42257bebf0.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9836,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9315,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9065,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_b94d7f78d0174aeb8ffb4e174c7969d0.png",
+        "detections": [
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9036,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8748,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8141,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_b9ee2517c74f4b499fc00a3459a72a0c.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9811,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9419,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9294,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_ba44fcf296b547d18b5dceede1be7c6d.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9864,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9857,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8921,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_bfcd0f7e55754f87936b5f12b1d3c28b.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9898,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9849,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.8847,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8512,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_c3d546d63941419b88a4800ea376a8e7.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9892,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9649,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9292,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_c40545564afc4ad5b9874f8dc4e8978a.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9884,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9562,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9153,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_ccc3e53977c3457e9f938a8cf8f777f7.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9858,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9003,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8317,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_cfa39b5036bc4cd2b5da0a3f62e26576.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9809,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9362,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9072,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.89,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_d2f54da262ec415397cb76b0d61879ed.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9839,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9718,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8791,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_d9768f95b0c14eeba94e5de8d0ee1b85.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9889,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.934,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9253,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.809,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_eb8e538fdc4c40d087e991d4c736c0e6.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9815,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9741,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8737,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_095613_905fb56a_fc8fb67235d04a3d8661e680e1930720.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9753,
+            "matched": true
+          },
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.975,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8249,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_005f35ac6fe5451d86c52371ea8721a2.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9746,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8994,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8512,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_044d4013bca142f090b6f904656f0fb7.png",
+        "detections": [
+          {
+            "class": "rot_2x2",
+            "confidence": 0.9795,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9728,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9187,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_081f7d9759f545bebf8c6b3cbaf7b20b.png",
+        "detections": [
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9539,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9314,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8675,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_0ee69bce32574043bc29c23b35b87ae8.png",
+        "detections": [
+          {
+            "class": "rot_2x2",
+            "confidence": 0.9318,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9188,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.8691,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_130a3c63462e499f8f2cede9c24cf8b1.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9751,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9413,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9082,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_1ed55acca5d7476ea3f01e7cd5110bbc.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.987,
+            "matched": true
+          },
+          {
+            "class": "rot_2x2",
+            "confidence": 0.9724,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8974,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.8829,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_21d8a49f0d894ac79c7129aabef3120f.png",
+        "detections": [
+          {
+            "class": "rot_2x2",
+            "confidence": 0.935,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9199,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.8168,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_228f0ae6054849c8a30df146d6a1c322.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9685,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.928,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.894,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8578,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_2848c5c2dcfb46c2b1647833f1c6c952.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9874,
+            "matched": true
+          },
+          {
+            "class": "rot_2x2",
+            "confidence": 0.9866,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9251,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.8639,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_3f45970d41854ae8bb6b76395c9557af.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9654,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9374,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9251,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8485,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_3fa79769db0d4725a89cff4a5d58c3cf.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9808,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.8756,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.6999,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_459ad7f877c1485e902c39e736079f22.png",
+        "detections": [
+          {
+            "class": "rot_2x2",
+            "confidence": 0.976,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9689,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9091,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_46e796c518fa442b93af22c0cabb4ea1.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9838,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.8883,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8862,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_61d73f5976a947e3b6ec15b1654c13db.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9541,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.8939,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.8059,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_6d281fd41baa4735bc6f92f5b82116a3.png",
+        "detections": [
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9102,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.879,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.8325,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_750443d87cc54d7881316543c75c0729.png",
+        "detections": [
+          {
+            "class": "rot_2x2",
+            "confidence": 0.9365,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9189,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.8821,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_75d34276f1aa43d5ad55bca1c2f169ab.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9893,
+            "matched": true
+          },
+          {
+            "class": "rot_2x2",
+            "confidence": 0.9878,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8028,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_77616c22c8c7462588a24792e8986784.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9557,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9167,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.8673,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8637,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_780d4af5031b4a738ab919895a3b4bbb.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9627,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9212,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.8052,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_7b1e226ad45a4c4f8273ab668ccc9270.png",
+        "detections": [
+          {
+            "class": "rot_2x2",
+            "confidence": 0.9878,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9877,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.7747,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_814f0990f0f142ef929faeb181c29483.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9721,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8715,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8436,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_8f394f581fc04b2597b086ad1be24b44.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9618,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.8984,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8779,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_92a5266d204e49f1b28068284b64beb6.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.975,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.925,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.9054,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_a08e3f6c74924f8e9c21dae8b61a96f9.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9877,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9206,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.8314,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_a0fb5dd9aefd4a4a98c0ef49abec3936.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9736,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.6512,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_a34875bbdf314035aee13bca6aa5dcc0.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.976,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.8847,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8805,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_a726c42f8450436abe6d3306cb8a93d0.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9446,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.8496,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8038,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_a926e725635c4172801ed169a5ddb339.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.985,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9047,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8614,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_b0365bd38a9347e2a7e923094d78ccca.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9846,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9226,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.8926,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_c474a508a99a4904b35903bbc6069eae.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9825,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.9203,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9121,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9037,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_cf231ee9385a468fa05455c7edbfa6b1.png",
+        "detections": [
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9405,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9123,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9089,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_d6e815857ab44197821885ade47251a4.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9842,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9015,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.8464,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_d7b2de748be84c5390340b5d92efd97f.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9751,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9018,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.887,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.8583,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_ed49d696f8ad4fd2ab8656319089307b.png",
+        "detections": [
+          {
+            "class": "rot_2x2",
+            "confidence": 0.968,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9385,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9158,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_f0d775e16c7448b5992a8c907ac748ac.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.98,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9063,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x4",
+            "confidence": 0.8291,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_f5c6a254b26042be8207c49b416becab.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9807,
+            "matched": true
+          },
+          {
+            "class": "hellgruen_2x2",
+            "confidence": 0.9194,
+            "matched": true
+          },
+          {
+            "class": "weiss_2x4",
+            "confidence": 0.8922,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.8591,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_fa4a47cffdaa4dd1921d65b141cf07ab.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9827,
+            "matched": true
+          },
+          {
+            "class": "rot_2x2",
+            "confidence": 0.9679,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.7857,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_102854_5abbfb74_fcb7fb6b1ae14d189f6e0b1bf1cdfa29.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9137,
+            "matched": true
+          },
+          {
+            "class": "gruen_2x4",
+            "confidence": 0.9065,
+            "matched": true
+          },
+          {
+            "class": "rot_2x4",
+            "confidence": 0.9057,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_02f0ae3b4ea64ff78eadae2f7495a15f.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9906,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.5634,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_05e03bcc53974101ac7f3ebde8e3ee2d.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9659,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9233,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_103463ec9edb4f429cc1bec1e2c61dd1.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9799,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.6534,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_107d5a158ea04de98d124046ceef82e8.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9693,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9601,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_1750784b166145fbb260edeafdbbf6f3.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9519,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.941,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_1bf05e266b8d4aefb2a310c2c99bd603.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9578,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9212,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_2a1c690614d9493d96993f2a3be6f089.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.96,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9206,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_35703b86e3b7453fad5244573937f2d2.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9588,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.8447,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_5002c02e2231411c99bdb6eab3d8575f.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9783,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9075,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_52e62d8b1dfc4540b86feeff5455433a.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9744,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.8912,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_542f7590cb7b44459a96830103f06ff8.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9335,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.8615,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_57adb483d1524b0d80d83ab6f6467a43.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9929,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.572,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_6d80fd7d8c584209b003c2078d499dad.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9318,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9245,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_6fd65c83ada14167ac7d9ef2c5ecf9d5.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9747,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.6638,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_73969ea7746f45dba23e7f3b61c633cd.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9929,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.5499,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_7b685cdda26946e98f115e7f0dac5cc7.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9835,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.7929,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_80cd06d89e174befa1382099216f12ba.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9513,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9337,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_8123d236e4b54fa5a9abd3f9d8deb643.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9773,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.8666,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_8ecfec94106c4986a6a4beb87bf8aa92.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9509,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.937,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_92983404a2714ce4a3efbfc81ca52f90.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9723,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.938,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_966c3fef803b4b13b3c606791ece6ef5.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9828,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.7445,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_9c8a3185e71144039c866cfc8e232710.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9921,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.6187,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_a0806b089b63438bb39c5844952eaa5f.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9894,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.6941,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_a0d443a8d55f42b6b37623ccf5f17e2e.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9647,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9365,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_a44ffea8095f4b559abfb2434abb39e1.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9302,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.8985,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_aa1d2b978a3644649abc6e6e708232ab.png",
+        "detections": [
+          {
+            "class": "maennchen",
+            "confidence": 0.9577,
+            "matched": true
+          },
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9153,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_b031096d621f45d4ab0b0394fc8cfc45.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.989,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9585,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_ca1fdf0a91f64e87aa1fe981cd9d4f8c.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9558,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.8834,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_cf6823ab38724b939f0c9e286f21c86a.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9849,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.6181,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_d257c335ac8c4925b80e46659c17d5dc.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9669,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9495,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_d3878703f52a41e2a3c382cadccfa636.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9935,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9135,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_db46a334d8db4597821c01171a7ca089.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9923,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.7592,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_df67608b70ed4c5db80f8bda729db712.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9897,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.543,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_e6988f5c0d434c79b7ace2a0883583c8.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9565,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9481,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_f32a24004b194e11adb71da2d1a577c0.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9773,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9569,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_f82ca761db0c4e64bb41f3bfa32f2898.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9424,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9228,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_f91d8cd5e66048f9b4d05551f166468a.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9245,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9214,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_fa3f50ee4e104ea1a3ce35f3b6351216.png",
+        "detections": [
+          {
+            "class": "blau_2x2",
+            "confidence": 0.9838,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9493,
+            "matched": true
+          }
+        ]
+      },
+      {
+        "image": "20261116_104918_31c3ac52_fc1bf0c715d9427d88b187291ccd1461.png",
+        "detections": [
+          {
+            "class": "gelb_2x2",
+            "confidence": 0.9774,
+            "matched": true
+          },
+          {
+            "class": "maennchen",
+            "confidence": 0.9527,
+            "matched": true
+          }
+        ]
+      }
+    ]
+  },
+  "thresholds": {
+    "confidence": 0.5,
+    "IoU_for_matching": 0.5
+  },
+  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden. Ein Teil der Validierung ist eine zurückgehaltene Ansichtsgruppe innerhalb einer Trainingssitzung.",
+  "unvalidated_classes": [
+    "hellgruen_2x4",
+    "rot_2x2"
+  ],
+  "unlearned_classes": [
+    "blau_2x4",
+    "gelb_2x4",
+    "gruen_2x2",
+    "weiss_2x2"
+  ]
+}

@@ -18,11 +18,10 @@
   ],
   "unvalidated_classes": [
     "hellgruen_2x4",
-    "maennchen",
     "rot_2x2"
   ],
-  "source_checkpoint": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2/weights/last.pt",
-  "source_run": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2",
-  "data": "dataset/prepared/lego_v2/data.yaml",
-  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Sitzungstrennung ist kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden."
+  "source_checkpoint": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-3/weights/best.pt",
+  "source_run": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-3",
+  "data": "/Users/Tim/Documents/DHBW/DataScienceKILego/dataset/prepared/lego_v3/data.yaml",
+  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden. Ein Teil der Validierung ist eine zurückgehaltene Ansichtsgruppe innerhalb einer Trainingssitzung."
 }

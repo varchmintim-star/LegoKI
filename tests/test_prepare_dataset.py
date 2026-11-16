@@ -71,6 +71,21 @@ class DatasetSplitTests(unittest.TestCase):
         self.assertEqual(summary["class_counts"]["train"], {"gelb_2x2": 1, "maennchen": 1})
         self.assertEqual(summary["unvalidated_classes"], ["maennchen"])
 
+    def test_explicit_holdout_group_is_not_copied_to_training(self):
+        self.session("01", 10)
+        latest = self.session("02", 20)
+        cv2.imwrite(str(latest / "images/left.png"), np.full((20, 20, 3), 30, np.uint8))
+        (latest / "labels/left.txt").write_text("12 0.5 0.5 0.5 0.5\n")
+        (latest / "review").mkdir()
+        (latest / "review/labeling_report.json").write_text(json.dumps({
+            "validation_images": ["left.png"], "split_policy": "Left position group"}))
+        out = self.root / "prepared"
+        _, summary = prepare(self.raw, out)
+        self.assertEqual(summary["image_counts"], {"train": 1, "val": 2})
+        self.assertFalse((out / "images/train/02_left.png").exists())
+        self.assertTrue((out / "images/val/02_left.png").exists())
+        self.assertEqual(summary["heldout_groups"], {"02": "Left position group"})
+
 
 if __name__ == "__main__":
     unittest.main()
