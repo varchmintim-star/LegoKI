@@ -1,0 +1,18 @@
+{
+  "criterion": "Letzter Trainingsstand: F\u00fcr neue Klassen fehlen Validierungsbilder; die Kontrollwerte bewerten nur die bisherigen Klassen.",
+  "selected": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2/weights/last.pt",
+  "scores": {
+    "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2/weights/best.pt": {
+      "tp": 31,
+      "fp": 1,
+      "fn": 1,
+      "f1": 0.96875
+    },
+    "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2/weights/last.pt": {
+      "tp": 31,
+      "fp": 1,
+      "fn": 1,
+      "f1": 0.96875
+    }
+  }
+}

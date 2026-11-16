@@ -82,6 +82,25 @@ class AnnotationWorkflowTests(unittest.TestCase):
         self.assertIsNotNone(self.ui.editor.pending)
         self.assertFalse((self.root / "unlabeled").exists())
 
+    def test_figure_needs_no_brick_color_or_size_and_next_box_resets(self):
+        self.drag()
+        self.click("figure")
+        self.click("confirm")
+        self.assertEqual(self.ui.editor.annotations[0][0], 12)
+        self.drag((300, 300), (400, 400))
+        self.assertFalse(self.ui.editor.figure)
+        self.assertFalse(self.ui.editor.confirm())
+
+    def test_switching_from_figure_to_brick_requires_both_fields(self):
+        self.drag()
+        self.click("figure")
+        self.click("color:5")
+        self.assertFalse(self.ui.editor.figure)
+        self.assertFalse(self.ui.editor.confirm())
+        self.click("size:0")
+        self.click("confirm")
+        self.assertEqual(self.ui.editor.annotations[0][0], 10)
+
 
 
 if __name__ == "__main__":

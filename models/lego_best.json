@@ -4,6 +4,9 @@
     "gelb_2x2",
     "gruen_2x4",
     "hellgruen_2x2",
+    "hellgruen_2x4",
+    "maennchen",
+    "rot_2x2",
     "rot_2x4",
     "weiss_2x4"
   ],
@@ -11,12 +14,15 @@
     "blau_2x4",
     "gelb_2x4",
     "gruen_2x2",
-    "hellgruen_2x4",
-    "rot_2x2",
     "weiss_2x2"
   ],
-  "source_run": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego",
-  "data": "/Users/Tim/Documents/DHBW/DataScienceKILego/dataset/prepared/lego_v1/data.yaml",
-  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Sitzungstrennung ist kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden.",
-  "source_checkpoint": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego/weights/last.pt"
+  "unvalidated_classes": [
+    "hellgruen_2x4",
+    "maennchen",
+    "rot_2x2"
+  ],
+  "source_checkpoint": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2/weights/last.pt",
+  "source_run": "/Users/Tim/Documents/DHBW/DataScienceKILego/runs/lego-2",
+  "data": "dataset/prepared/lego_v2/data.yaml",
+  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Sitzungstrennung ist kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden."
 }

@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-11-16T10:38:19.166009+01:00",
+  "sessions": {
+    "train": [
+      "20261116_095613_905fb56a",
+      "20261116_102854_5abbfb74"
+    ],
+    "val": [
+      "20261116_094633_4a11d604"
+    ]
+  },
+  "image_counts": {
+    "train": 76,
+    "val": 8
+  },
+  "class_counts": {
+    "train": {
+      "gruen_2x4": 23,
+      "blau_2x2": 47,
+      "gelb_2x2": 24,
+      "rot_2x4": 43,
+      "hellgruen_2x2": 48,
+      "weiss_2x4": 23,
+      "rot_2x2": 11,
+      "maennchen": 11,
+      "hellgruen_2x4": 11
+    },
+    "val": {
+      "weiss_2x4": 2,
+      "gelb_2x2": 13,
+      "blau_2x2": 4,
+      "rot_2x4": 7,
+      "gruen_2x4": 4,
+      "hellgruen_2x2": 2
+    }
+  },
+  "unlearned_classes": [
+    "blau_2x4",
+    "gelb_2x4",
+    "gruen_2x2",
+    "weiss_2x2"
+  ],
+  "unvalidated_classes": [
+    "hellgruen_2x4",
+    "maennchen",
+    "rot_2x2"
+  ],
+  "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. Sitzungstrennung ist kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden."
+}

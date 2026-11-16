@@ -21,7 +21,9 @@ def prepare(raw=Path("dataset/raw"), output=Path("dataset/prepared/lego_v1")):
                         if p.suffix.lower() in {".jpg", ".jpeg", ".png"})
         if not images:
             continue
-        if json.loads((session / "classes.json").read_text()) != list(CLASSES):
+        session_classes = json.loads((session / "classes.json").read_text())
+        if (len(session_classes) not in (12, len(CLASSES)) or
+                session_classes != list(CLASSES[:len(session_classes)])):
             raise ValueError(f"Abweichende Klassenreihenfolge: {session}")
         report_path = session / "review/labeling_report.json"
         report = json.loads(report_path.read_text()) if report_path.exists() else {}
@@ -34,13 +36,15 @@ def prepare(raw=Path("dataset/raw"), output=Path("dataset/prepared/lego_v1")):
     if output.exists():
         raise FileExistsError(f"{output} existiert bereits; vorhandene Daten bleiben erhalten.")
 
-    # Neueste Sitzung trainieren; ältere Sitzungen nur zur Validierung verwenden.
-    splits = {"train": sessions[-1:], "val": sessions[:-1]}
+    # Die älteste Sitzung bleibt zur Validierung reserviert. Neuere Aufnahmen
+    # ergänzen das Training, damit ältere gelernte Klassen nicht verloren gehen.
+    splits = {"train": sessions[1:], "val": sessions[:1]}
     prepared = []
     counts = {split: Counter() for split in splits}
     hashes = {split: set() for split in splits}
     for split, groups in splits.items():
         for session, images in groups:
+            session_class_count = len(json.loads((session / "classes.json").read_text()))
             for path in images:
                 label = session / "labels" / f"{path.stem}.txt"
                 frame = cv2.imread(str(path))
@@ -51,7 +55,7 @@ def prepare(raw=Path("dataset/raw"), output=Path("dataset/prepared/lego_v1")):
                     raise ValueError(f"Leere Beschriftung ungeprüft: {label}")
                 for row in rows:
                     c, x, y, w, h = map(float, row.split())
-                    if not (c.is_integer() and 0 <= c < len(CLASSES) and
+                    if not (c.is_integer() and 0 <= c < session_class_count and
                             0 < w <= 1 and 0 < h <= 1 and
                             x - w / 2 >= -1e-7 and x + w / 2 <= 1 + 1e-7 and
                             y - h / 2 >= -1e-7 and y + h / 2 <= 1 + 1e-7):
@@ -78,6 +82,7 @@ def prepare(raw=Path("dataset/raw"), output=Path("dataset/prepared/lego_v1")):
                          for split, groups in splits.items()},
         "class_counts": {split: dict(counter) for split, counter in counts.items()},
         "unlearned_classes": sorted(set(CLASSES) - counts["train"].keys()),
+        "unvalidated_classes": sorted(counts["train"].keys() - counts["val"].keys()),
         "limitations": "Kleiner Datensatz mit denselben Steinen und derselben Anlage. "
                         "Sitzungstrennung ist kein unabhängiger Praxistest. Keine Testaufnahmen vorhanden.",
     }

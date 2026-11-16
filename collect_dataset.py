@@ -13,7 +13,9 @@ import numpy as np
 
 
 COLORS = ("gelb", "gruen", "hellgruen", "weiss", "blau", "rot")
-CLASSES = tuple(f"{color}_{size}" for color in COLORS for size in ("2x2", "2x4"))
+BRICK_CLASSES = tuple(f"{color}_{size}" for color in COLORS for size in ("2x2", "2x4"))
+CLASSES = BRICK_CLASSES + ("maennchen",)
+FIGURE_CLASS_ID = len(BRICK_CLASSES)
 
 
 def yolo_box(box, width, height):
@@ -58,6 +60,7 @@ class AnnotationEditor:
         self.pending = None
         self.color = None
         self.size = None
+        self.figure = False
         self.drag = None
         self.endpoint = None
         self.status = "Bild einfrieren, dann Rahmen ziehen."
@@ -67,21 +70,29 @@ class AnnotationEditor:
             return
         self.pending = box
         self.color = self.size = None
+        self.figure = False
         self.status = "Jetzt Farbe und Groesse waehlen, dann bestaetigen."
 
+    def selection_complete(self):
+        return self.pending is not None and (self.figure or
+                                             (self.color is not None and self.size is not None))
+
     def confirm(self):
-        if self.pending is None or self.color is None or self.size is None:
-            self.status = "Bitte Rahmen, Farbe UND Groesse waehlen."
+        if not self.selection_complete():
+            self.status = "Farbe + Groesse oder Maennchen waehlen."
             return False
-        self.annotations.append((self.color * 2 + self.size, self.pending))
+        class_id = FIGURE_CLASS_ID if self.figure else self.color * 2 + self.size
+        self.annotations.append((class_id, self.pending))
         self.pending = None
         self.color = self.size = None
+        self.figure = False
         self.status = "Markiert. Naechsten Rahmen ziehen oder Bild speichern."
         return True
 
     def cancel(self):
         self.pending = None
         self.color = self.size = None
+        self.figure = False
         self.drag = self.endpoint = None
 
     def freeze(self, frame):
@@ -116,8 +127,13 @@ class CaptureUI:
         e = self.editor
         if name.startswith("color:") and e.pending is not None:
             e.color = int(name.split(":")[1])
+            e.figure = False
         elif name.startswith("size:") and e.pending is not None:
             e.size = int(name.split(":")[1])
+            e.figure = False
+        elif name == "figure" and e.pending is not None:
+            e.figure = True
+            e.color = e.size = None
         elif name == "confirm":
             e.confirm()
         elif name == "cancel":
@@ -192,7 +208,7 @@ class CaptureUI:
         else:
             action = {32: "freeze", 13: "confirm", 10: "confirm", 27: "cancel",
                       ord("s"): "save", ord("u"): "undo", ord("v"): "discard",
-                      ord("p"): "photo"}.get(key)
+                      ord("p"): "photo", ord("m"): "figure"}.get(key)
             if action:
                 self.action(action)
 
@@ -209,7 +225,8 @@ class CaptureUI:
         if e.pending is not None:
             color_label = COLORS[e.color] if e.color is not None else "Farbe?"
             size_label = ("2x2", "2x4")[e.size] if e.size is not None else "Groesse?"
-            boxes.append((e.pending, f"{color_label} {size_label} - Enter", (0, 215, 255)))
+            label = "Maennchen" if e.figure else f"{color_label} {size_label}"
+            boxes.append((e.pending, f"{label} - Enter", (0, 215, 255)))
         for (x, y, w, h), label, color in boxes:
             p1 = (round(x * scale), round(y * scale))
             p2 = (round((x + w) * scale), round((y + h) * scale))
@@ -246,17 +263,19 @@ class CaptureUI:
         text("3. Groesse waehlen", 284)
         button("2 x 2 (Z)", "size:0", 0, 294, selected=e.size == 0, enabled=e.pending is not None)
         button("2 x 4 (X)", "size:1", 152, 294, selected=e.size == 1, enabled=e.pending is not None)
-        button("Bestaetigen (Enter)", "confirm", 0, 336, 294,
-               enabled=e.pending is not None and e.color is not None and e.size is not None)
-        button("Rahmen weg (Esc)", "cancel", 0, 374, enabled=e.pending is not None)
-        button("Zurueck (U)", "undo", 152, 374, enabled=bool(e.annotations) or e.pending is not None)
-        text(f"{len(e.annotations)} Steine bestaetigt", 430)
-        button("Bild speichern (S)", "save", 0, 440, 294, enabled=e.can_save())
-        button("Bild verwerfen (V)", "discard", 0, 477, 294, enabled=e.frozen is not None)
-        button("Nur Foto speichern (P)", "photo", 0, 518, 294,
+        button("Oder: Maennchen (M)", "figure", 0, 335, 294,
+               selected=e.figure, enabled=e.pending is not None)
+        button("Bestaetigen (Enter)", "confirm", 0, 375, 294,
+               enabled=e.selection_complete())
+        button("Rahmen weg (Esc)", "cancel", 0, 414, enabled=e.pending is not None)
+        button("Zurueck (U)", "undo", 152, 414, enabled=bool(e.annotations) or e.pending is not None)
+        text(f"{len(e.annotations)} Objekte bestaetigt", 470)
+        button("Bild speichern (S)", "save", 0, 480, 294, enabled=e.can_save())
+        button("Bild verwerfen (V)", "discard", 0, 517, 294, enabled=e.frozen is not None)
+        button("Nur Foto speichern (P)", "photo", 0, 558, 294,
                enabled=not e.annotations and e.pending is None)
         for i, line in enumerate(textwrap.wrap(e.status, 39)):
-            text(line, 580 + i * 17, (0, 215, 255))
+            text(line, 620 + i * 17, (0, 215, 255))
         return display
 
 

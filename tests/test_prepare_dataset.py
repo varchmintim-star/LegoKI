@@ -39,8 +39,8 @@ class DatasetSplitTests(unittest.TestCase):
         self.assertEqual(summary["image_counts"], {"train": 1, "val": 1})
         self.assertTrue((out / "images/train/02_brick.png").exists())
         self.assertTrue((out / "labels/val/01_brick.txt").exists())
-        self.assertEqual(len(summary["unlearned_classes"]), 11)
-        self.assertEqual(len(json.loads(config.read_text())["names"]), 12)
+        self.assertEqual(len(summary["unlearned_classes"]), 12)
+        self.assertEqual(len(json.loads(config.read_text())["names"]), 13)
         with self.assertRaises(FileExistsError):
             prepare(self.raw, out)
 
@@ -51,6 +51,25 @@ class DatasetSplitTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Identische Bilder"):
             prepare(self.raw, out)
         self.assertFalse(out.exists())
+
+    def test_legacy_sessions_keep_ids_when_figure_class_is_appended(self):
+        old = self.session("01", 10)
+        (old / "classes.json").write_text(json.dumps(CLASSES[:12]))
+        new = self.session("02", 20)
+        (new / "labels/brick.txt").write_text("12 0.5 0.5 0.5 0.5\n")
+        _, summary = prepare(self.raw, self.root / "prepared")
+        self.assertEqual(summary["class_counts"]["train"], {"maennchen": 1})
+        self.assertEqual(summary["class_counts"]["val"], {"gelb_2x2": 1})
+
+    def test_new_session_adds_to_training_without_dropping_older_classes(self):
+        self.session("01", 10)
+        self.session("02", 20)
+        latest = self.session("03", 30)
+        (latest / "labels/brick.txt").write_text("12 0.5 0.5 0.5 0.5\n")
+        _, summary = prepare(self.raw, self.root / "prepared")
+        self.assertEqual(summary["sessions"], {"train": ["02", "03"], "val": ["01"]})
+        self.assertEqual(summary["class_counts"]["train"], {"gelb_2x2": 1, "maennchen": 1})
+        self.assertEqual(summary["unvalidated_classes"], ["maennchen"])
 
 
 if __name__ == "__main__":

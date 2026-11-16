@@ -1,0 +1,1774 @@
+{
+  "method": "Farbsegmentierung als Rahmenvorschlag für Steine; alle Klassen visuell geprüft, Fehlvorschläge entfernt; Figur manuell eingerahmt. Trainingskopien ohne unklare Randfragmente.",
+  "originals_preserved": true,
+  "classes": [
+    "gelb_2x2",
+    "gelb_2x4",
+    "gruen_2x2",
+    "gruen_2x4",
+    "hellgruen_2x2",
+    "hellgruen_2x4",
+    "weiss_2x2",
+    "weiss_2x4",
+    "blau_2x2",
+    "blau_2x4",
+    "rot_2x2",
+    "rot_2x4",
+    "maennchen"
+  ],
+  "class_counts": {
+    "blau_2x2": 23,
+    "gruen_2x4": 12,
+    "hellgruen_2x2": 19,
+    "hellgruen_2x4": 11,
+    "maennchen": 11,
+    "rot_2x2": 11,
+    "rot_2x4": 23,
+    "weiss_2x4": 11
+  },
+  "split_policy": "Sitzung beim Train/Val/Test-Split als Gruppe behandeln; Figur und neue Steinvarianten benötigen weitere unabhängige Kontrollaufnahmen.",
+  "images": [
+    {
+      "source": "unlabeled/005f35ac6fe5451d86c52371ea8721a2.jpg",
+      "image": "images/005f35ac6fe5451d86c52371ea8721a2.png",
+      "label": "labels/005f35ac6fe5451d86c52371ea8721a2.txt",
+      "crop_xyxy": [
+        141,
+        0,
+        1204,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            159,
+            256,
+            318,
+            360
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            638,
+            248,
+            753,
+            375
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            945,
+            245,
+            1186,
+            382
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/044d4013bca142f090b6f904656f0fb7.jpg",
+      "image": "images/044d4013bca142f090b6f904656f0fb7.png",
+      "label": "labels/044d4013bca142f090b6f904656f0fb7.txt",
+      "crop_xyxy": [
+        190,
+        0,
+        1024,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            208,
+            255,
+            328,
+            359
+          ]
+        },
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            495,
+            257,
+            640,
+            368
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            873,
+            261,
+            1006,
+            367
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/081f7d9759f545bebf8c6b3cbaf7b20b.jpg",
+      "image": "images/081f7d9759f545bebf8c6b3cbaf7b20b.png",
+      "label": "labels/081f7d9759f545bebf8c6b3cbaf7b20b.txt",
+      "crop_xyxy": [
+        201,
+        0,
+        1086,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            219,
+            245,
+            383,
+            371
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            573,
+            255,
+            802,
+            380
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            915,
+            137,
+            1068,
+            356
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/0ee69bce32574043bc29c23b35b87ae8.jpg",
+      "image": "images/0ee69bce32574043bc29c23b35b87ae8.png",
+      "label": "labels/0ee69bce32574043bc29c23b35b87ae8.txt",
+      "crop_xyxy": [
+        131,
+        0,
+        1127,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            149,
+            254,
+            312,
+            360
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            534,
+            257,
+            674,
+            367
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            866,
+            259,
+            1109,
+            361
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/130a3c63462e499f8f2cede9c24cf8b1.jpg",
+      "image": "images/130a3c63462e499f8f2cede9c24cf8b1.png",
+      "label": "labels/130a3c63462e499f8f2cede9c24cf8b1.txt",
+      "crop_xyxy": [
+        152,
+        0,
+        1064,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            170,
+            251,
+            415,
+            365
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            612,
+            253,
+            741,
+            379
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            902,
+            263,
+            1046,
+            366
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/1ed55acca5d7476ea3f01e7cd5110bbc.jpg",
+      "image": "images/1ed55acca5d7476ea3f01e7cd5110bbc.png",
+      "label": "labels/1ed55acca5d7476ea3f01e7cd5110bbc.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1191,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            13,
+            248,
+            256,
+            366
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            370,
+            257,
+            503,
+            365
+          ]
+        },
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            665,
+            260,
+            804,
+            369
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            1045,
+            265,
+            1173,
+            368
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/21d8a49f0d894ac79c7129aabef3120f.jpg",
+      "image": "images/21d8a49f0d894ac79c7129aabef3120f.png",
+      "label": "labels/21d8a49f0d894ac79c7129aabef3120f.txt",
+      "crop_xyxy": [
+        107,
+        0,
+        1089,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            125,
+            253,
+            290,
+            361
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            509,
+            258,
+            653,
+            365
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            843,
+            254,
+            1071,
+            369
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/228f0ae6054849c8a30df146d6a1c322.jpg",
+      "image": "images/228f0ae6054849c8a30df146d6a1c322.png",
+      "label": "labels/228f0ae6054849c8a30df146d6a1c322.txt",
+      "crop_xyxy": [
+        39,
+        0,
+        1135,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            57,
+            246,
+            277,
+            373
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            400,
+            132,
+            544,
+            353
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            630,
+            262,
+            742,
+            363
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            870,
+            267,
+            1117,
+            366
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/2848c5c2dcfb46c2b1647833f1c6c952.jpg",
+      "image": "images/2848c5c2dcfb46c2b1647833f1c6c952.png",
+      "label": "labels/2848c5c2dcfb46c2b1647833f1c6c952.txt",
+      "crop_xyxy": [
+        10,
+        0,
+        1231,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            28,
+            249,
+            283,
+            360
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            424,
+            249,
+            629,
+            382
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            774,
+            263,
+            895,
+            365
+          ]
+        },
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            1060,
+            267,
+            1213,
+            370
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/3f45970d41854ae8bb6b76395c9557af.jpg",
+      "image": "images/3f45970d41854ae8bb6b76395c9557af.png",
+      "label": "labels/3f45970d41854ae8bb6b76395c9557af.txt",
+      "crop_xyxy": [
+        0,
+        0,
+        1108,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            10,
+            238,
+            217,
+            366
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            386,
+            253,
+            611,
+            378
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            740,
+            134,
+            882,
+            355
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            962,
+            264,
+            1090,
+            365
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/3fa79769db0d4725a89cff4a5d58c3cf.jpg",
+      "image": "images/3fa79769db0d4725a89cff4a5d58c3cf.png",
+      "label": "labels/3fa79769db0d4725a89cff4a5d58c3cf.txt",
+      "crop_xyxy": [
+        146,
+        0,
+        1089,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            164,
+            253,
+            322,
+            357
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            525,
+            245,
+            718,
+            375
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            915,
+            264,
+            1071,
+            370
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/459ad7f877c1485e902c39e736079f22.jpg",
+      "image": "images/459ad7f877c1485e902c39e736079f22.png",
+      "label": "labels/459ad7f877c1485e902c39e736079f22.txt",
+      "crop_xyxy": [
+        173,
+        0,
+        1023,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            191,
+            255,
+            311,
+            359
+          ]
+        },
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            485,
+            257,
+            622,
+            365
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            857,
+            261,
+            1005,
+            365
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/46e796c518fa442b93af22c0cabb4ea1.jpg",
+      "image": "images/46e796c518fa442b93af22c0cabb4ea1.png",
+      "label": "labels/46e796c518fa442b93af22c0cabb4ea1.txt",
+      "crop_xyxy": [
+        114,
+        0,
+        1024,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            132,
+            250,
+            377,
+            368
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            517,
+            255,
+            746,
+            371
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            854,
+            259,
+            1006,
+            370
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/61d73f5976a947e3b6ec15b1654c13db.jpg",
+      "image": "images/61d73f5976a947e3b6ec15b1654c13db.png",
+      "label": "labels/61d73f5976a947e3b6ec15b1654c13db.txt",
+      "crop_xyxy": [
+        215,
+        0,
+        1159,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            233,
+            257,
+            388,
+            362
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            585,
+            246,
+            792,
+            376
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            985,
+            265,
+            1141,
+            366
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/6d281fd41baa4735bc6f92f5b82116a3.jpg",
+      "image": "images/6d281fd41baa4735bc6f92f5b82116a3.png",
+      "label": "labels/6d281fd41baa4735bc6f92f5b82116a3.txt",
+      "crop_xyxy": [
+        123,
+        0,
+        1019,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            141,
+            255,
+            300,
+            359
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            406,
+            259,
+            629,
+            363
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            791,
+            254,
+            1001,
+            382
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/750443d87cc54d7881316543c75c0729.jpg",
+      "image": "images/750443d87cc54d7881316543c75c0729.png",
+      "label": "labels/750443d87cc54d7881316543c75c0729.txt",
+      "crop_xyxy": [
+        148,
+        0,
+        1140,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            166,
+            254,
+            329,
+            361
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            558,
+            259,
+            679,
+            362
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            889,
+            255,
+            1122,
+            367
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/75d34276f1aa43d5ad55bca1c2f169ab.jpg",
+      "image": "images/75d34276f1aa43d5ad55bca1c2f169ab.png",
+      "label": "labels/75d34276f1aa43d5ad55bca1c2f169ab.txt",
+      "crop_xyxy": [
+        228,
+        0,
+        1045,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            246,
+            255,
+            474,
+            367
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            596,
+            260,
+            727,
+            367
+          ]
+        },
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            891,
+            260,
+            1027,
+            370
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/77616c22c8c7462588a24792e8986784.jpg",
+      "image": "images/77616c22c8c7462588a24792e8986784.png",
+      "label": "labels/77616c22c8c7462588a24792e8986784.txt",
+      "crop_xyxy": [
+        193,
+        0,
+        1280,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            211,
+            252,
+            435,
+            376
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            578,
+            134,
+            711,
+            356
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            787,
+            263,
+            903,
+            365
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            1023,
+            265,
+            1267,
+            375
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/780d4af5031b4a738ab919895a3b4bbb.jpg",
+      "image": "images/780d4af5031b4a738ab919895a3b4bbb.png",
+      "label": "labels/780d4af5031b4a738ab919895a3b4bbb.txt",
+      "crop_xyxy": [
+        247,
+        0,
+        958,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            265,
+            132,
+            375,
+            356
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            448,
+            259,
+            587,
+            364
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            705,
+            263,
+            940,
+            371
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/7b1e226ad45a4c4f8273ab668ccc9270.jpg",
+      "image": "images/7b1e226ad45a4c4f8273ab668ccc9270.png",
+      "label": "labels/7b1e226ad45a4c4f8273ab668ccc9270.txt",
+      "crop_xyxy": [
+        196,
+        0,
+        1023,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            214,
+            253,
+            451,
+            371
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            576,
+            260,
+            695,
+            364
+          ]
+        },
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            867,
+            263,
+            1005,
+            364
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/814f0990f0f142ef929faeb181c29483.jpg",
+      "image": "images/814f0990f0f142ef929faeb181c29483.png",
+      "label": "labels/814f0990f0f142ef929faeb181c29483.txt",
+      "crop_xyxy": [
+        123,
+        0,
+        1173,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            141,
+            254,
+            268,
+            356
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            605,
+            248,
+            719,
+            374
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            913,
+            246,
+            1155,
+            382
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/8f394f581fc04b2597b086ad1be24b44.jpg",
+      "image": "images/8f394f581fc04b2597b086ad1be24b44.png",
+      "label": "labels/8f394f581fc04b2597b086ad1be24b44.txt",
+      "crop_xyxy": [
+        393,
+        0,
+        1256,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            411,
+            245,
+            542,
+            373
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            744,
+            255,
+            979,
+            381
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            1080,
+            142,
+            1238,
+            367
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/92a5266d204e49f1b28068284b64beb6.jpg",
+      "image": "images/92a5266d204e49f1b28068284b64beb6.png",
+      "label": "labels/92a5266d204e49f1b28068284b64beb6.txt",
+      "crop_xyxy": [
+        14,
+        0,
+        1039,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            32,
+            237,
+            191,
+            362
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            423,
+            258,
+            545,
+            363
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            858,
+            250,
+            1021,
+            377
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/a08e3f6c74924f8e9c21dae8b61a96f9.jpg",
+      "image": "images/a08e3f6c74924f8e9c21dae8b61a96f9.png",
+      "label": "labels/a08e3f6c74924f8e9c21dae8b61a96f9.txt",
+      "crop_xyxy": [
+        161,
+        0,
+        1241,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            179,
+            244,
+            396,
+            368
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            595,
+            260,
+            734,
+            366
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            1021,
+            251,
+            1223,
+            378
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/a0fb5dd9aefd4a4a98c0ef49abec3936.jpg",
+      "image": "images/a0fb5dd9aefd4a4a98c0ef49abec3936.png",
+      "label": "labels/a0fb5dd9aefd4a4a98c0ef49abec3936.txt",
+      "crop_xyxy": [
+        272,
+        0,
+        837,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            290,
+            243,
+            463,
+            371
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            675,
+            259,
+            819,
+            371
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/a34875bbdf314035aee13bca6aa5dcc0.jpg",
+      "image": "images/a34875bbdf314035aee13bca6aa5dcc0.png",
+      "label": "labels/a34875bbdf314035aee13bca6aa5dcc0.txt",
+      "crop_xyxy": [
+        112,
+        0,
+        1018,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            130,
+            250,
+            364,
+            362
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            508,
+            254,
+            738,
+            375
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            847,
+            259,
+            1000,
+            371
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/a726c42f8450436abe6d3306cb8a93d0.jpg",
+      "image": "images/a726c42f8450436abe6d3306cb8a93d0.png",
+      "label": "labels/a726c42f8450436abe6d3306cb8a93d0.txt",
+      "crop_xyxy": [
+        347,
+        0,
+        1090,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            365,
+            254,
+            589,
+            378
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            692,
+            132,
+            833,
+            363
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            933,
+            265,
+            1072,
+            364
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/a926e725635c4172801ed169a5ddb339.jpg",
+      "image": "images/a926e725635c4172801ed169a5ddb339.png",
+      "label": "labels/a926e725635c4172801ed169a5ddb339.txt",
+      "crop_xyxy": [
+        207,
+        0,
+        1249,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            225,
+            255,
+            344,
+            358
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            680,
+            249,
+            800,
+            375
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            987,
+            245,
+            1231,
+            383
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/b0365bd38a9347e2a7e923094d78ccca.jpg",
+      "image": "images/b0365bd38a9347e2a7e923094d78ccca.png",
+      "label": "labels/b0365bd38a9347e2a7e923094d78ccca.txt",
+      "crop_xyxy": [
+        173,
+        0,
+        1221,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            191,
+            240,
+            359,
+            368
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            583,
+            260,
+            702,
+            364
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            1006,
+            251,
+            1203,
+            379
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/c474a508a99a4904b35903bbc6069eae.jpg",
+      "image": "images/c474a508a99a4904b35903bbc6069eae.png",
+      "label": "labels/c474a508a99a4904b35903bbc6069eae.txt",
+      "crop_xyxy": [
+        114,
+        0,
+        1280,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            132,
+            253,
+            292,
+            358
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            398,
+            255,
+            629,
+            374
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            773,
+            254,
+            1003,
+            379
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            1105,
+            267,
+            1274,
+            374
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/cf231ee9385a468fa05455c7edbfa6b1.jpg",
+      "image": "images/cf231ee9385a468fa05455c7edbfa6b1.png",
+      "label": "labels/cf231ee9385a468fa05455c7edbfa6b1.txt",
+      "crop_xyxy": [
+        199,
+        0,
+        1038,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            217,
+            246,
+            382,
+            371
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            572,
+            255,
+            801,
+            380
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            866,
+            130,
+            1020,
+            376
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/d6e815857ab44197821885ade47251a4.jpg",
+      "image": "images/d6e815857ab44197821885ade47251a4.png",
+      "label": "labels/d6e815857ab44197821885ade47251a4.txt",
+      "crop_xyxy": [
+        113,
+        0,
+        1190,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            131,
+            243,
+            356,
+            365
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            552,
+            260,
+            678,
+            363
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            980,
+            251,
+            1172,
+            378
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/d7b2de748be84c5390340b5d92efd97f.jpg",
+      "image": "images/d7b2de748be84c5390340b5d92efd97f.png",
+      "label": "labels/d7b2de748be84c5390340b5d92efd97f.txt",
+      "crop_xyxy": [
+        17,
+        0,
+        1123,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            35,
+            112,
+            200,
+            343
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            237,
+            254,
+            392,
+            359
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            508,
+            263,
+            728,
+            363
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            878,
+            246,
+            1105,
+            379
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/ed49d696f8ad4fd2ab8656319089307b.jpg",
+      "image": "images/ed49d696f8ad4fd2ab8656319089307b.png",
+      "label": "labels/ed49d696f8ad4fd2ab8656319089307b.txt",
+      "crop_xyxy": [
+        73,
+        0,
+        914,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            91,
+            251,
+            221,
+            357
+          ]
+        },
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            381,
+            257,
+            529,
+            365
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            761,
+            261,
+            896,
+            366
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/f0d775e16c7448b5992a8c907ac748ac.jpg",
+      "image": "images/f0d775e16c7448b5992a8c907ac748ac.png",
+      "label": "labels/f0d775e16c7448b5992a8c907ac748ac.txt",
+      "crop_xyxy": [
+        151,
+        0,
+        1085,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            169,
+            254,
+            321,
+            359
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "hellgruen_2x4",
+          "box_xyxy_in_original": [
+            504,
+            249,
+            732,
+            370
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            924,
+            265,
+            1067,
+            365
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/f5c6a254b26042be8207c49b416becab.jpg",
+      "image": "images/f5c6a254b26042be8207c49b416becab.png",
+      "label": "labels/f5c6a254b26042be8207c49b416becab.txt",
+      "crop_xyxy": [
+        88,
+        0,
+        1190,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            106,
+            247,
+            331,
+            375
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            393,
+            133,
+            552,
+            365
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "hellgruen_2x2",
+          "box_xyxy_in_original": [
+            679,
+            262,
+            798,
+            364
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "weiss_2x4",
+          "box_xyxy_in_original": [
+            923,
+            265,
+            1172,
+            369
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/fa4a47cffdaa4dd1921d65b141cf07ab.jpg",
+      "image": "images/fa4a47cffdaa4dd1921d65b141cf07ab.png",
+      "label": "labels/fa4a47cffdaa4dd1921d65b141cf07ab.txt",
+      "crop_xyxy": [
+        110,
+        0,
+        932,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            128,
+            245,
+            370,
+            376
+          ]
+        },
+        {
+          "class_id": 8,
+          "class_name": "blau_2x2",
+          "box_xyxy_in_original": [
+            495,
+            260,
+            605,
+            360
+          ]
+        },
+        {
+          "class_id": 10,
+          "class_name": "rot_2x2",
+          "box_xyxy_in_original": [
+            797,
+            262,
+            914,
+            366
+          ]
+        }
+      ]
+    },
+    {
+      "source": "unlabeled/fcb7fb6b1ae14d189f6e0b1bf1cdfa29.jpg",
+      "image": "images/fcb7fb6b1ae14d189f6e0b1bf1cdfa29.png",
+      "label": "labels/fcb7fb6b1ae14d189f6e0b1bf1cdfa29.txt",
+      "crop_xyxy": [
+        251,
+        0,
+        1086,
+        720
+      ],
+      "status": "labeled_visually_reviewed",
+      "objects": [
+        {
+          "class_id": 3,
+          "class_name": "gruen_2x4",
+          "box_xyxy_in_original": [
+            269,
+            245,
+            424,
+            371
+          ]
+        },
+        {
+          "class_id": 11,
+          "class_name": "rot_2x4",
+          "box_xyxy_in_original": [
+            619,
+            255,
+            849,
+            380
+          ]
+        },
+        {
+          "class_id": 12,
+          "class_name": "maennchen",
+          "box_xyxy_in_original": [
+            922,
+            137,
+            1068,
+            360
+          ]
+        }
+      ]
+    }
+  ]
+}

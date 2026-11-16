@@ -31,26 +31,29 @@ Training-Abhängigkeiten installieren:
 .venv/bin/python -m pip install -r requirements-training.txt
 ```
 
-Der erste vorbereitete Datensatz unter `dataset/prepared/lego_v1/` enthält
-38 Trainingsbilder der neuen Sitzung und acht Validierungsbilder der älteren
-Sitzung. Vier ältere Bilder mit unklaren Randfragmenten sind ausgeschlossen.
+Der aktuelle vorbereitete Datensatz unter `dataset/prepared/lego_v2/` enthält
+76 Trainingsbilder mit 241 Objekten aus zwei Sitzungen sowie acht
+Validierungsbilder der ältesten Sitzung. Vier ältere Bilder mit unklaren
+Randfragmenten sind ausgeschlossen. Der erste Datensatz bleibt unter `lego_v1/` erhalten.
 Der Aufbau erfolgt mit `prepare_dataset.py`; vorhandene vorbereitete Daten
 werden dabei nicht überschrieben. Klassenverteilung und Einschränkungen stehen
-in `dataset/prepared/lego_v1/manifest.json`.
+in `dataset/prepared/lego_v2/manifest.json`.
 
 ```sh
-.venv/bin/python train_model.py
+.venv/bin/python train_model.py --epochs 60 --patience 0
 ```
 
 Das Training passt vortrainierte YOLO11-Nano-Gewichte lokal an die LEGO-Daten an.
 Es nutzt nach Verfügbarkeit die Apple-GPU (MPS), sonst CPU. Standard: 60 Epochen,
 Batchgröße 4, Bildgröße 640. Farbtonänderungen als Datenaugmentation sind
 deaktiviert, damit die Farblabels gültig bleiben. Ergebnisse und Gewichte landen
-in einem neuen Ordner unter `runs/lego*`. Aus dem Checkpoint mit dem besten
-Trainings-Validierungswert und dem letzten Checkpoint wird nach Validierungs-F1
-bei Anzeigeschwelle 0.5 und IoU 0.5 ausgewählt. Dieses Modell wird zusätzlich als
-`models/lego_best.pt` für die Liveansicht bereitgestellt. Die Auswahl steht in
-`runs/lego*/live_selection.json`; sie ersetzt keinen unabhängigen Test.
+in einem neuen Ordner unter `runs/lego*`. Ohne neue unvalidierte Klassen wird
+aus dem besten und letzten Checkpoint nach Validierungs-F1 bei confidence 0.5
+und IoU 0.5 ausgewählt. Fehlen neue Klassen im Kontrollsatz, wird der letzte
+vollständig trainierte Stand übernommen; der alte Kontrollsatz kann deren
+Lernfortschritt nicht bewerten. `--patience 0` deaktiviert Early Stopping.
+Das Live-Modell liegt unter `models/lego_best.pt`. Auswahl und Einschränkungen
+stehen in `runs/lego*/live_selection.json`.
 
 ```sh
 .venv/bin/python lego_camera.py --camera 1
@@ -60,16 +63,27 @@ bei Anzeigeschwelle 0.5 und IoU 0.5 ausgewählt. Dieses Modell wird zusätzlich 
 die Anzeigeschwelle. `lego_detector.py` ist weiterhin nur der frühere
 heuristische Prototyp; für das trainierte Modell `lego_camera.py` verwenden.
 
-Der aktuelle Datensatz enthält nur **Gelb/Blau/Hellgrün als 2×2** sowie
-**Rot/Grün/Weiß als 2×4**. Die anderen sechs Klassen fehlen. Weil jede Farbe nur
-in einer Größe vorkommt, ist damit insbesondere noch nicht belegt, dass das
-Modell die Größe unabhängig von der Farbe erkennt. Dafür beide Größen jeder
-Farbe aufnehmen. Die Liveansicht filtert untrainierte Klassen anhand der
-Modelldatei `models/lego_best.json` aus.
+Der zweite Trainingslauf liegt unter `runs/lego-2/`: 60 Epochen auf Apple M3,
+76 Trainingsbilder, acht Validierungsbilder. Das vorherige Live-Modell ist
+unter `models/archive/lego_v1/` gesichert.
 
-Die Validierung ist eine erste Kontrolle auf derselben Anlage mit denselben
-Steinen. Ein unabhängiger Test mit neuen Aufnahmen steht noch aus; die acht
-Validierungsbilder liefern keine belastbare allgemeine Trefferquote.
+Aktuell gelernt:
+
+- **2×2:** Gelb, Blau, Hellgrün, Rot.
+- **2×4:** Grün, Hellgrün, Rot, Weiß.
+- **Männchen** als eigene Klasse.
+
+Es fehlen weiterhin Blau/Gelb als 2×4 sowie Grün/Weiß als 2×2. Die Liveansicht
+filtert untrainierte Klassen über `models/lego_best.json` aus. Für Rot und
+Hellgrün kommen nun beide Größen im Training vor. Bei den anderen Farben
+sind Farbe und Größe weiterhin gekoppelt.
+
+Die Funktionsprüfung auf den Trainingsbildern erkennt 241 von 241 markierten
+Objekten. Dies belegt keine Generalisierung. Auf den acht alten Kontrollbildern
+werden 31 von 32 Steinen korrekt erkannt, bei einem Fehlalarm (confidence 0.5,
+IoU 0.5). Für Männchen, Rot 2×2 und Hellgrün 2×4 fehlen unabhängige Kontrollbilder.
+Die Zahlen sind deshalb keine allgemeine Trefferquote. Details stehen unter
+`runs/lego-2/review/verification.json` und `runs/lego-2/MODEL_CARD.md`.
 
 Grundlage: [Ultralytics-Training](https://docs.ultralytics.com/modes/train/).
 
@@ -79,8 +93,17 @@ Grundlage: [Ultralytics-Training](https://docs.ultralytics.com/modes/train/).
 .venv/bin/python collect_dataset.py --camera 1
 ```
 
-Zwölf Klassen: `gelb`, `gruen`, `hellgruen`, `weiss`, `blau`, `rot`, jeweils
-mit Suffix `_2x2` oder `_2x4`. Grün und Hellgrün sind getrennte Klassen.
+13 Klassen: `gelb`, `gruen`, `hellgruen`, `weiss`, `blau`, `rot`, jeweils
+mit Suffix `_2x2` oder `_2x4`, sowie `maennchen`. Grün und Hellgrün sind
+getrennte Klassen. Die Figurenklasse wurde als ID 12 angehängt; die bisherigen
+Steinklassen behalten ihre IDs. Ältere Sitzungen mit zwölf Klassen bleiben gültig.
+
+Die Sitzung `20261116_102854_5abbfb74` enthält 38 weitere beschriftete Fotos
+mit 121 Objekten, darunter elf Männchen sowie erstmals rote 2×2- und hellgrüne
+2×4-Steine. Bericht und Kontrollübersichten liegen im Unterordner `review/`.
+Diese Daten wurden zusammen mit der vorherigen Sitzung im zweiten
+Trainingslauf verwendet. Für die neuen Klassen fehlen weiterhin unabhängige
+Validierungsaufnahmen.
 
 ### Beschriftung durch Codex
 
@@ -98,7 +121,8 @@ werden. Alle Steine möglichst vollständig im Bild platzieren.
 3. Mit gedrückter linker Maustaste einen Rahmen um den gesamten sichtbaren Stein
    ziehen, einschließlich Noppen und Seitenflächen, ohne Schatten.
 4. **Danach** rechts die Farbe und die Größe **2×2** oder **2×4** anklicken.
-   Beide Angaben müssen für jeden neuen Rahmen ausgewählt werden.
+   Beide Angaben müssen für jeden neuen Steinrahmen ausgewählt werden. Bei
+   einer Figur stattdessen **Männchen / M** wählen; Farbe und Größe entfallen.
 5. **Bestätigen** anklicken oder **Enter** drücken. Der Rahmen wird grün.
    Dann den nächsten Rahmen ziehen und wieder Farbe und Größe zuweisen.
 6. Wenn alle sichtbaren Zielsteine markiert sind, **Bild speichern** anklicken
