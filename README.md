@@ -23,6 +23,26 @@ Die Pfade in historischen Trainingsprotokollen beziehen sich teilweise auf
 den ursprünglichen Rechner. Die Startskripte und die Datensatzkonfiguration
 verwenden den jeweils aktuellen Projektordner.
 
+## Präsentationswebseite mit Live-Demo
+
+Die Webseite unter `presentation/dist/` führt in etwa zehn Minuten inklusive
+Live-Demonstration durch Modell, Trainings- und Validierungsdaten, Ergebnisse
+und Grenzen des Projekts. Lokal starten:
+
+```sh
+python3 start_presentation.py
+```
+
+Danach `http://localhost:8765` im Browser öffnen. „Präsentieren“ startet den
+Vortragsmodus; Pfeiltasten wechseln Kapitel und **N** zeigt Notizen. Der
+Zeitplan steht auch in `presentation/dist/presenter-notes.md`.
+
+Für die Live-Demo die Python-Kameraansicht mit **Q** schließen, im Browser das
+Modell laden und die iPhone-Kamera auswählen. Das exportierte Modell läuft
+direkt im Browser; Kamerabilder werden nicht hochgeladen. Die eingebauten
+Projektaufnahmen lassen sich ebenfalls mit dem Modell auswerten. WebGPU wird
+bei Unterstützung genutzt, andernfalls WebAssembly auf der CPU.
+
 ## KI-Modell trainieren und live verwenden
 
 Training-Abhängigkeiten installieren:
